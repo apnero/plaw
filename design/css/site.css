@@ -1,0 +1,486 @@
+/* FS PUBLISHER - BASE STYLESHEET - UPDATED 02.10.12 */
+
+html { font-size: 62.5%; }
+#ie html { font-size: 1em; }
+body { margin: 0; padding: 0; background: #FFFFFF; color: #000000; }
+body, input, textarea, option, select { font-family: Arial, Helvetica, sans-serif; }
+table, input, textarea, option, select { font-size: 1em; }
+ul, ol { margin: 0; padding: 0 0 0 2.75em; }
+h1, h2, h3, h4, h5, h6, p, ul, ol { padding-top: 0; padding-bottom: 1.2em; margin: 0; }
+ul ul, ul ol, ol ol, ol ul { padding-bottom: 0; }
+a img, abbr { border: 0; }
+
+/* DEFINE BASE FONT SIZE -- 1.1em = 11px, etc. */
+body { font-size: 1.1em; }
+
+/* DEFINE CONTENT LINE HEIGHT */
+#content p, #content ul, #content ol, #content li, #content blockquote, #tinymce p, #tinymce ul, #tinymce ol, #tinymce li, #tinymce blockquote { line-height: 1.6em; }
+
+/* DEFINE CONTENT COLOR */
+#content, #content td, #tinymce, #tinymce td, #content legend { color: #666666; }
+#content #intakeFormI fieldset, #content .intakeFormIII fieldset, #content #intakeFormIV fieldset{ border-color: #000000; }
+
+
+/* DEFINE LINK COLOR */
+a:link { color: #0361c2; }
+a:visited { color: #132b46; }
+a:hover, a:focus { color: #a58103; }
+a:active { color: #a58103; text-decoration: none; }
+
+/* HEADERS */
+h1 { font-size: 1.4em; }
+h2, #content legend, #tinymce legend { font-size: 1.08em; }
+h3 { font-size: 1em; padding-bottom: .3em; }
+h4 { font-size: 1em; padding-bottom: .3em; }
+h5 { font-size: .9em; padding-bottom: .3em; }
+h6 { font-size: .8em; padding-bottom: .3em; }
+
+/* TINYMCE BACKGROUND */
+.mceContentBody { background: #F7F7F7; }
+
+/* FS PUBLISHER - WYSIWYG STYLESHEET - UPDATED 11-12-2008 */
+.fontColor000000 { color: #000; }.fontColorC0C0C0 { color: #C0C0C0; }.fontColor000080 { color: #000080; }.fontColor008000 { color: #008000; }.fontColor008080 { color: #008080; }.fontColor800000 { color: #800000; }.fontColor800080 { color: #800080; }.fontColor808000 { color: #808000; }.fontColor808080 { color: #808080; }.fontColorFFFFFF { color: #FFF; }.fontColor0000FF { color: #00F; }.fontColor00FF00 { color: #0F0; }.fontColor00FFFF { color: #0FF; }.fontColorFF0000 { color: #F00; }.fontColorFF00FF { color: #F0F; }.fontColorFFFF00 { color: #FF0; }
+.backgroundColor000000 { background: #000; }.backgroundColorC0C0C0 { background: #C0C0C0; }.backgroundColor000080 { background: #000080; }.backgroundColor008000 { background: #008000; }.backgroundColor008080 { background: #008080; }.backgroundColor800000 { background: #800000; }.backgroundColor800080 { background: #800080; }.backgroundColor808000 { background: #808000; }.backgroundColor808080 { background: #808080; }.backgroundColorFFFFFF { background: #FFF; }.backgroundColor0000FF { background: #00F; }.backgroundColor00FF00 { background: #0F0; }.backgroundColor00FFFF { background: #0FF; }.backgroundColorFF0000 { background: #F00; }.backgroundColorFF00FF { background: #F0F; }.backgroundColorFFFF00 { background: #FF0; }
+
+/* STYLES FOR THE STYLES DROP-DOWN IN TINYMCE */
+/* TinyMCE Style: callOut=Call Out */
+.callOut { background: #094e78; color: #fff; font-weight: bold; }
+.callOut a:link, .callOut a:visited { color: #f4c623; }
+.callOut a:hover, .callOut a.active{ color: #fff; }
+p.callOut { padding: 18px 32px; margin-bottom: 1.2em; }
+/* TinyMCE Style: smallText=Small Text */
+.smallText { font-size: .9em;}
+
+/* ATTORNEY PROFILES */
+#attorneyProfile ul { padding-left: 0; list-style: none; }
+	#attorneyProfile img.attorneyProfilePhoto { float: right; margin: 0 0 10px 15px; }
+		#attorneyProfile div.attorneyProfileNarrative ul { list-style:disc; padding: 0 0 0 2em; }
+        	#attorneyProfile div.attorneyProfileNarrative ul li { padding: 3px 0 3px 0;}
+		#attorneyProfile div.attorneyProfileSection ul { margin-left: 20px; }
+			#attorneyProfile div.attorneyProfileSection ul li { padding: 3px 0 3px 0;}
+				#attorneyProfile div.attorneyProfileSection ul li ul li { padding: 0 0 0 0; }
+				#attorneyProfile div.attorneyProfileSection p { padding: 3px 0 3px 20px; }
+#attorneyProfile .attorneyProfileName { padding-bottom: 0; display: none; }
+#attorneyProfile .attorneyProfilePositions { padding-bottom: 1.2em; }
+#attorneyProfile .attorneyProfileLocationLabel, #attorneyProfile .attorneyProfilePhoneLabel, #attorneyProfile .attorneyProfileFaxLabel, #attorneyProfile .attorneyProfileEmailLabel, #attorneyProfile .attorneyProfileVCardLabel { width: 6em; float: left; font-weight: bold; }
+#attorneyProfile .attorneyProfileLocation, #attorneyProfile .attorneyProfilePhone, #attorneyProfile .attorneyProfileFax, #attorneyProfile .attorneyProfileEmail, #attorneyProfile .attorneyProfileVCard { margin-left: 6em; padding-bottom: .6em; }
+#ie6 #attorneyProfile .attorneyProfileLocation, #ie6 #attorneyProfile .attorneyProfilePhone, #ie6 #attorneyProfile .attorneyProfileFax, #ie6 #attorneyProfile .attorneyProfileEmail, #ie6 #attorneyProfile .attorneyProfileVCard { display: inline-block; }
+#attorneyProfile .attorneyProfileEducation ul li strong { display: block; }
+#attorneyProfile .attorneyProfileContactInformation { padding-bottom: 1.2em; }
+
+/* E-MAIL OBFUSCATION */
+#containerEmailObfuscation, #containerEmailObfuscation * { margin: 0; padding: 0; }
+	#containerEmailObfuscation {  }
+	#containerEmailObfuscation p.emailObfuscationNote { padding: 0; }
+	#emailObfuscation {  }
+		#emailObfuscation fieldset { border: none; border-top: 1px solid #000; padding: 1em 0 0 1.2em; margin: 1em 0 0; }
+			#emailObfuscation fieldset legend { font-weight: bold; }
+			#ie #emailObfuscation fieldset legend { margin: 0 0 0 -.6em; }
+			#emailObfuscation fieldset label { cursor: pointer; }
+			#emailObfuscation fieldset label.formDescribeIssue { float: left; margin: .2em 0; }
+			#emailObfuscation fieldset .formHide { display: none; }
+			#emailObfuscation fieldset #formError { display: block; cursor: default; color: #f00; clear: both; }
+				#emailObfuscation fieldset #formError strong { font-weight: normal; }
+			#emailObfuscation fieldset input { display: block; width: 20.5em; margin: .2em 0 .5em 0; padding: 2px; }
+			#emailObfuscation fieldset input.intakeFormHiddenInput { padding: 0; }
+			#emailObfuscation fieldset textarea { clear: left; display: block; width: 25em; height: 10em; padding: 2px; margin: .2em 0 0 0; }
+			#emailObfuscation fieldset div.formHighlight * { border: 1px solid #aaa; }
+			#emailObfuscation fieldset div.formHighlight *:hover, #emailObfuscation fieldset div.formHighlight *:focus { background: #ffc; }
+			#emailObfuscation fieldset p { margin: .5em 0; }
+			#emailObfuscation fieldset div.formCheck { margin: .2em 0; }
+				#emailObfuscation fieldset .formCheck input { background: none; }
+				#emailObfuscation fieldset label input { display: inline; width: 2em; }
+				#emailObfuscation fieldset .formHasJavaScript { display: none; }
+				#emailObfuscation fieldset p img { float: left; margin: 0 1em 0 0; }
+		input#emailObfuscationSubmit { width: 12.5em; height: 2.5em; margin: .5em 0; }
+
+/* INTAKE FORM ERRORS */
+.intakeFormError { color: #ff0000; font-weight: bold; }
+
+/* INTAKE FORM I */
+#containerIntakeFormI, #containerIntakeFormI * { margin: 0; padding: 0; }
+#containerIntakeFormI {  }
+	#containerIntakeFormI p.intakeFormINote { padding: 0; }
+	#intakeFormI { padding-bottom: 30px;  }
+		#intakeFormI fieldset { border: none; border-top: 1px solid #000; padding: 1em 0 0 1.2em; margin: 1em 0 0; }
+			#intakeFormI fieldset legend { font-weight: bold; }
+			#ie #intakeFormI fieldset legend { margin: 0 0 0 -.6em; }
+			#intakeFormI fieldset label { cursor: pointer; }
+			#intakeFormI fieldset .formHide { display: none; }
+			#intakeFormI fieldset #formError { display: block; cursor: default; color: #f00; clear: both; }
+				#intakeFormI fieldset #formError strong { font-weight: normal; }
+			#intakeFormI fieldset label.formDescribeIssue { float: left; margin: .2em 0; }
+			#intakeFormI fieldset div.formCheck label { margin: 0 3em 0 0;}
+			#intakeFormI fieldset input, #intakeFormI fieldset select { display: block; width: 20.5em; margin: .2em 0 .5em 0; padding: 2px; }
+			#intakeFormI fieldset input.intakeFormHiddenInput { padding: 0; }
+			#intakeFormI fieldset div.formHighlight * { border: 1px solid #aaa; }
+			#intakeFormI fieldset div.formHighlight *:hover, #intakeFormI fieldset div.formHighlight *:focus { background: #ffc; }
+			#intakeFormI fieldset select { width: 21em; }
+				#intakeFormI fieldset label input { display: inline; width: 2em; margin: 0; }
+			#intakeFormI fieldset textarea { clear: left; display: block; width: 25em; height: 10em; padding: 2px; margin: .2em 0 0 0; }
+			#intakeFormI fieldset p { margin: .5em 0; }
+			#intakeFormI fieldset div.formCheck { margin: .5em 0; }
+				#intakeFormI fieldset .formCheck input { background: none; }
+			#intakeFormI img.formDisclaimer { float: left; margin: 0 1em 0 0; }
+		#intakeFormISubmit { width: 12.5em; height: 2.5em; margin: .5em 0; }
+
+/* INTAKE FORM IV */
+#containerIntakeFormIV, #containerIntakeFormIV * { margin: 0; padding: 0; }
+
+	#containerIntakeFormIV p.IntakeFormIVNote { padding: 0; }
+	#intakeFormIV { padding-bottom: 30px;  }
+		#intakeFormIV fieldset { border: none; border-top: 1px solid #000; padding: 1em 0 0 1.2em; margin: 1em 0 0; }
+			#intakeFormIV fieldset legend { font-weight: bold; }
+			#ie #intakeFormIV fieldset legend { margin: 0 0 0 -.6em; }
+			#intakeFormIV fieldset label { cursor: pointer; }
+			#intakeFormIV fieldset .formHide { display: none; }
+			#intakeFormIV fieldset #formError { display: block; cursor: default; color: #f00; clear: both; }
+				#intakeFormIV fieldset #formError strong { font-weight: normal; }
+			#intakeFormIV fieldset label.formDescribeIssue { float: left; margin: .2em 0; }
+			#intakeFormIV fieldset div.formCheck label { margin: 0 3em 0 0;}
+			#intakeFormIV fieldset input, #intakeFormIV fieldset select { display: block; width: 20.5em; margin: .2em 0 .5em 0; padding: 2px; }
+			#intakeFormIV fieldset input.intakeFormHiddenInput { padding: 0; }
+			#intakeFormIV fieldset div.formHighlight * { border: 1px solid #aaa; }
+			#intakeFormIV fieldset div.formHighlight *:hover, #intakeFormIV fieldset div.formHighlight *:focus { background: #ffc; }
+			#intakeFormIV fieldset select { width: 21em; }
+				#intakeFormIV fieldset label input { display: inline; width: 2em; margin: 0; }
+			#intakeFormIV fieldset textarea { clear: left; display: block; width: 25em; height: 10em; padding: 2px; margin: .2em 0 0 0; }
+			#intakeFormIV fieldset p { margin: .5em 0; }
+			#intakeFormIV fieldset div.formCheck { margin: .5em 0; }
+				#intakeFormIV fieldset .formCheck input { background: none; }
+			#intakeFormIV img.formDisclaimer { float: left; margin: 0 1em 0 0; }
+		#intakeFormIVSubmit { width: 12.5em; height: 2.5em; margin: .5em 0; }	
+		
+/* ON-SITE SEARCH RESULTS */
+#searchResults dd { margin: 0 0 1.2em 0; }
+#searchResults .searchResultsHighlight { font-weight: bold; }
+#searchResults ul.searchResultsPagination, #searchResults ul.searchResultsPagination li { margin: 0; padding: 0; float: left; list-style: none; }
+	#searchResults ul.searchResultsPagination li { display: block; margin-right: .25em; }
+
+/* DESIGN DYNAMIC PRODUCTS ENEWSLETTER */
+.eNewsletterDesignModule { padding: 5px; }
+
+/* DESIGN DYNAMIC PRODUCTS FAQ */
+.faqDesignModule { padding: 5px; }
+	.faqDesignModule ul.faqDesignModuleList { margin: 0; padding: 0; list-style: none; overflow: visible; }
+		.faqDesignModule ul.faqDesignModuleList li { display: block; padding: 0 0 1.2em 0; }
+
+/* DESIGN DYNAMIC PRODUCTS NEWS */
+.newsDesignModule { padding: 5px; }
+	.newsDesignModule ul.newsDesignModuleList { margin: 0; padding: 0; list-style: none; overflow: visible; }
+		.newsDesignModule ul.newsDesignModuleList li { display: block; padding: 0 0 1.2em 0; }
+
+/* DESIGN INTAKE FORM SHORT */
+#containerIntakeFormShort, #containerIntakeFormShort *, #containerIntakeFormShortAutofill, #containerIntakeFormShortAutofill * { margin: 0; padding: 0; }
+		#intakeFormShort fieldset, #intakeFormShortAutofill fieldset { border: none; }
+			#intakeFormShort fieldset legend span, #intakeFormShort fieldset label span, #intakeFormShortAutofill fieldset legend span, #intakeFormShortAutofill fieldset label span, #intakeFormShortAutofill fieldset label.formLabelHide { position: absolute; left: -9000em; }
+			#intakeFormShort fieldset label, #intakeFormShortAutofill fieldset label { cursor: pointer; }
+			#intakeFormShort fieldset .formHide, #intakeFormShortAutofill fieldset label.formHide { display: none; }
+				#intakeFormShort fieldset #formError strong, #intakeFormShortAutofill fieldset #formError strong { font-weight: normal; }
+			#intakeFormShort fieldset input.intakeFormHiddenInput, #intakeFormShortAutofill fieldset input.intakeFormHiddenInput { padding: 0; }
+			#intakeFormShort fieldset textarea, #intakeFormShortAutofill fieldset textarea { height: 43px; }
+			#intakeFormShort fieldset .formCheck, #intakeFormShortAutofill fieldset .formCheck { display: block; line-height: 1.5em; }
+			#intakeFormShort fieldset label input, #intakeFormShortAutofill fieldset label input { display: inline; width: 13px; margin: 0 5px 0 0; padding: 0; }
+				#intakeFormShort fieldset input.checkbox, #intakeFormShortAutofill fieldset input.checkbox { background: none; }
+			/* pop-up disclaimer */
+			#intakeFormShortDisclaimer { display: none; width: 197px; font-size: 10px; }
+				#intakeFormShortDisclaimer div { border: 0; background: #393939; color: #fff; padding: 5px; }
+					#intakeFormShortDisclaimer p { clear: both; overflow: auto; padding: 10px 15px .8em; font-family: Verdana, Geneva, sans-serif; }
+					#intakeFormShortDisclaimer a { display: block; margin: 0 15px 0 0; color: #fff; font-weight: bold; text-decoration: none; }
+/* DESIGN INTAKE FORM SHORT - Common Edits */
+/* text color, size */
+#containerIntakeFormShort, #containerIntakeFormShortAutofill { font-size: .91em; font-family: Verdana, Geneva, sans-serif; }
+	#containerIntakeFormShort p, #containerIntakeFormShortAutofill p { padding: 0 0 1.1em 0; }
+			/* form error color */
+			#intakeFormShort fieldset #formError, #intakeFormShortAutofill fieldset #formError { display: block; cursor: default; color: #f00; }
+			#intakeFormShortAutofill fieldset #formError { padding: 0 0 2px 0; }
+			/* input width, margin, padding, color */
+			#intakeFormShort fieldset input, #intakeFormShort fieldset textarea, #intakeFormShortAutofill fieldset input, #intakeFormShortAutofill fieldset textarea { display: block; width: 187px; font-family: Verdana, Geneva, sans-serif; margin: .2em 0 .5em 0; padding: 1px 5px; background: #393939; color: #fff; }
+			/* input border color */
+			#intakeFormShort fieldset div.formHighlight *, #intakeFormShortAutofill fieldset div.formHighlight * { border: 0; }
+			/* input bg color on hover */
+			#intakeFormShort fieldset div.formHighlight *:hover, #intakeFormShort fieldset div.formHighlight *:focus, #intakeFormShortAutofill fieldset div.formHighlight *:hover, #intakeFormShortAutofill fieldset div.formHighlight *:focus { background: #2a2a2a; }
+				/* disclaimer link color */
+				#intakeFormShort fieldset .formCheck a:link, #intakeFormShort fieldset .formCheck a:visited, #intakeFormShortAutofill fieldset .formCheck a:link, #intakeFormShortAutofill fieldset .formCheck a:visited { color: #f4c623; }
+				#intakeFormShort fieldset .formCheck a:hover, #intakeFormShort fieldset .formCheck a:focus, #intakeFormShortAutofill fieldset .formCheck a:hover, #intakeFormShortAutofill fieldset .formCheck a:focus { color: #33a1d5; }
+		#intakeFormShortSubmit, #intakeFormShortAutofillSubmit { width: auto; height: auto; margin: 18px 0 0 91px; }
+
+/* DESIGN ON-SITE SEARCH */
+#containerSearchFormDesign, #searchFormDesign { margin: 0; padding: 0; }
+#containerSearchFormDesign {  }
+	#searchFormDesign {  }
+		#searchFormDesign label {  }
+		#searchFormDesign #searchFormDesignSearchTerms { margin: 0 3px 0 0; padding: 8px 10px; width: 164px; border: 0; background: #5a5a5a;  color: #fff; font-size: 12px; height: 15px; }
+		#searchFormDesign #searchFormDesignSearchTerms:focus, #searchFormDesign #searchFormDesignSearchTerms:hover {  }
+		#searchFormDesign #searchFormDesignSubmit { width: auto; height: auto; display: inline; vertical-align: top; }
+		#searchFormDesign label { cursor: pointer; }
+		#searchFormDesign .formLabelHide { position: absolute; left: -5000px; }
+
+/* sIFR STYLES */
+.sIFR-flash { visibility: visible; margin: 0; padding: 0; }
+.sIFR-replaced, .sIFR-ignore { visibility: visible !important; }
+.sIFR-alternate { position: absolute; left: 0; top: 0; width: 0; height: 0; display: block; overflow: hidden; color: #333333; }
+.sIFR-active h1 { padding-bottom: 0; visibility: hidden; line-height: 1em; }
+
+/* STANDARD ELEMENTS */
+.printElement { display: none; }
+.screenElement {  }
+.handheldElement { display: none; }
+#skipToLinks { position: absolute; left: 0; top: -9000px; z-index: 100; list-style: none; text-align: left; margin: 0; padding: 0; }
+	#skipToLinks li { position: relative; z-index: 100; overflow: hidden; }
+.offscreen { text-indent: -9999em; padding: 0; background-repeat: no-repeat; background-position: 0 0; display: block; overflow: hidden; list-style: none; }
+.offscreen br { display: none; }
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }
+
+/* CUSTOM DESIGN ELEMENTS */
+body.design { background: #ffffff url(../images/bg-body.png) center top repeat-x; }
+body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x; }
+#containerPage { width: 983px; margin: 0 auto; padding: 0 10px 0 7px; }
+	#banner { position: relative; height: 309px; }
+	.home #banner { height: 550px; background:url(../images/bg-handcuff.png) 642px 270px no-repeat; z-index: 99; }
+		#lettermark { position: absolute; top: 19px; left: 0; }
+		#logo { position: absolute; top: 41px; left: 172px; width: 411px; height: 47px; background-image: url(../images/logo.png); }
+		#cta { position: absolute; left: 729px; }
+			#cta a { width: 250px; }		
+       #callnow{  color: #f4c623; font-size: 20px;  font-weight: normal; padding:20px 0px 6px 20px;}
+       #call-now-phone{ color: #ffffff; font-size: 22px; font-family:  Arial,Helvetica,sans-serif;; font-weight: normal;}
+        #call-now-phone ul{ margin:0px; padding-left:20px}
+		 #call-now-phone li{ color: #ffffff; font-size: 22px; font-family:  Arial,Helvetica,sans-serif; font-weight: normal;}
+		  #call-now-phone span{ color: #55d7fd; font-size: 14px; font-family: Arial,Helvetica,sans-serif; font-weight: normal;}
+		#tagline { position: absolute; top: 160px; left: 172px; }
+		#tagline2 { position: absolute; top: 236px; left: 0; }
+		/* START JQUERY INTERACTIVE */
+		#containerInteractive { position: absolute; top: 213px; left: 12px; width: 594px; height: 311px; }
+			#slides {position: relative; top: 0px; left: 0px; padding: 0px; margin: 0px; font-size: 0em; text-indent:-3000px; }
+				#slides li {width: 594px; height: 311px;  }
+				.slide1 { background: url(../images/bg-j-slide1.jpg) no-repeat; display: block; }
+				.slide2 { background: url(../images/bg-j-slide2.jpg) no-repeat; display: none; }
+				.slide3 { background: url(../images/bg-j-slide3.jpg) no-repeat; display: none; }
+				.slide4 { background: url(../images/bg-j-slide4.jpg) no-repeat; display: none; }
+				.slide5 { background: url(../images/bg-j-slide5.jpg) no-repeat; display: none; }
+				.slide6 { background: url(../images/bg-j-slide6.jpg) no-repeat; display: none; }
+				.slide7 { background: url(../images/bg-j-slide7.jpg) no-repeat; display: none; }
+				.slide8 { background: url(../images/bg-j-slide8.jpg) no-repeat; display: none; }
+				.slide9 { background: url(../images/bg-j-slide9.jpg) no-repeat; display: none; }
+					.learnMore { position: absolute; width: 121px; height: 18px; right: 17px; bottom: 7px; }
+		/* END JQUERY INTERACTIVE */
+		.home #containerForm { margin: 20px 0 0 0;}
+	#containerNavigation { height: 49px; }
+		#navigationMain { height: 49px; width: 670px; float: left; }
+			#navigationMain ul { list-style: none; padding: 0; margin: 0; }
+			#navigationMain ul li { display: inline; }
+			#navigationMain a { display: block; float: left; }
+		#containerSearchFormDesign { width: 222px; float: right; margin: 0px 0px 0 0; }
+	#containerColumns { float: left; width: 983px; padding-bottom: 50px; }
+		#containerMain { float: right; width: 727px; }
+			#columnMain { float: left; width: 388px; padding: 26px 0 0 0; }
+				#containerPageTitle { padding: 0; background:url(../images/bg-dotted-line.png) left bottom repeat-x; padding: 0 0 11px 0; }
+				.sIFR-active #containerPageTitle { padding-bottom: 9px; }
+					#pageTitle { padding: 0; color: #0361c2; font-size: 24px; font-family: Georgia, "Times New Roman", Times, serif; font-weight: normal;}
+					.sIFR-active #pageTitle { font-size: 24px; }
+				#content { padding: 14px 0 0 0; font-size: 12px; }
+					#content ul { list-style: square;}
+			#columnAlternate { float: right; width: 306px; padding: 30px 0 0 0; }
+				#containerForm { background: #171717 url(../images/bg-containerForm.png) no-repeat; border: 1px solid #084b76; padding: 35px 40px 27px 54px; width: 210px; margin-bottom: 20px;}
+					#shortFormTitle { width: 222px; height: 20px; background-image: url(../images/shortFormTitle.png); }
+					#containerIntakeFormShort, #containerIntakeFormShortAutofill { padding: 18px 0 0 1px; color: #fff; }
+				#containerVideo { background: #10618e url(../images/bg-containerVideo.png) repeat-x; padding: 8px 0px 10px 0px; width: 306px; overflow: hidden;}
+					div.findlawPlayer.dropDown.tiny { height: auto !important;}
+					div.findlawPlayer.dropDown object.BrightcoveExperience { position: relative !important; }
+				#containerLogos { padding: 41px 0 0 0; width: 304px;}
+				.home #containerLogos { position:absolute; top:218px; left:685px; width: 304px; padding: 20px 0 24px 0; background-color: #fff;}
+					#containerLogos ul { list-style: none; padding: 0; margin: 0; }
+					#containerLogos li { display: inline; }
+					#containerLogos img { display: block; float: left; }
+					#superLawyer { margin: 10px 0 0 20px; }
+					.home #superLawyer { margin: 10px 0 0 52px; }
+		#columnSide { float: left; width: 222px; padding: 38px 0 0 4px; }
+			#practiceTitle { width: 120px; height: 14px; background-image: url(../images/practiceTitle.png); display: block; margin: 0 0 15px 0; }
+			#navigationPractice { background:url(../images/bg-dotted-line.png) repeat-x; width: 222px; padding: 9px 0 22px 0; border-bottom: 1px solid #9db8c9;}
+			#subscribe { display: block; margin: 0 0 11px 0;}
+			#findlaw-network { display: block; margin: 0 0 51px;}
+			#contactInformation { line-height: 1.36em; background: #0d5580 url(../images/bg-contactInformation.png) no-repeat; padding: 0; margin: 30px 0 30px 1px; color: #ffffff; padding: 13px 5px 0 4px; width: 212px; overflow: hidden; }
+				#lettermark-lower { float: left; margin: -1px 0 0 0;}
+				#contactInformation p { width: 129px; float: right; padding-bottom: 15px;}
+				#contactInformation em { text-transform: uppercase; font-weight: bold; font-style:normal;}
+				#contactInformation a { color: #f4c623; font-weight: bold; text-decoration: underline; }
+				#contactInformation a:hover, #contactInformation a:focus, #contactInformation a.current { color: #fff; text-decoration: underline; }
+			#social { border-top: 1px solid #9db8c9; padding: 31px 0 0 0;}
+				#navigationSocial { clear: both; list-style: none; padding: 0 0 20px; margin: 0; }
+				#navigationSocial li { display: block; margin-bottom: 10px; }
+#containerFooter { clear: both; background: #132b46 url(../images/bg-containerFooter.png) repeat-x; min-width: 1000px;}	
+	#footer { width: 1000px; margin: 0 auto; color: #71a6b8; padding: 0 0 26px 0; overflow: hidden; }
+		#lower { height: 84px; }
+			#cta-lower { float: left; margin: 21px 0 0 6px;}
+			#creditCards { float: right; margin: 11px 54px 0 0;}
+		#logo-lower { float: left; margin: 0 0 0 6px;}
+		#containerRight { width: 753px; float: right; padding: 2px 54px 0 0;}
+			#navigationLower { }
+				#navigationLower ul { list-style: none; padding: 0; margin: 0; }
+				#navigationLower ul li { display: inline; }
+				#navigationLower li a { display: inline-block; color: #f9fbfa; font-weight: bold; text-transform: uppercase; text-decoration: none; padding: 0 15px 0 0; }
+				#navigationLower li a:hover, #navigationLower li a:focus, #navigationLower li a.current { color: #f4c623; text-decoration: none; }
+				#navigationLower li.itemFirst a { padding-left: 0; }
+				#navigationLower li.itemLast a { border-right: 0; padding-right: 0; }
+				a#navigationLowerJump { font-size: 0; }
+			#geographicalFooter { padding: 25px 0 0 0; line-height: 1.3em; }
+				#geographicalFooter p { }
+			#finePrint { }
+				#finePrint a { color: #f4c623; font-weight: bold; text-decoration: none; }
+				#finePrint a:hover, #finePrint a:focus, #finePrint a.current { color: #f4c623; text-decoration: underline; }
+				#copyright { display: inline; padding: 0; margin: 0 10px 0 0; }
+				#branding { display: inline; padding: 0; }
+/* CASCADING MENU - v4.2.5 - 1.3.2012 */
+	/*Horizontal Magic */
+	.cascadingMenu { position: relative; }.cascadingMenu img { display: block; }.cascadingMenu ul { margin: 0; padding: 0; list-style: none; }.cascadingMenu ul li { float: left; position: relative; }.cascadingMenu ul li a { display: block; }.cascadingMenu ul li.megaMenu { position: static; }.cascadingMenu .containerMenu, .cascadingMenu ul ul { display:block; position: absolute; left: -9999em; z-index: 99; }.cascadingMenu .containerMenu ul { position: static; left: 0; z-index: auto; width: auto; }.cascadingMenu ul li li { float: none; }.cascadingMenu li:hover .containerMenu, .cascadingMenu li.menuover .containerMenu, .cascadingMenu li:hover ul, .cascadingMenu li.menuover ul { left: 0; top: auto; background-position: 0 0; }.cascadingMenu ul li.menuover ul ul, .cascadingMenu ul li:hover ul ul, .cascadingMenu ul li.menuover ul ul { left: -9999em; }.cascadingMenu ul li:hover ul ul ul, .cascadingMenu ul li.menuover ul ul ul { position: static; left: 0; top: 0; }
+	/* IE fixes */ #ie .cascadingMenu li { display: inline; } #ie .cascadingMenu li a { height: auto; } #ie .cascadingMenu li li a { zoom: 1; } #ie li.menuover, #ie li:hover { z-index: 5; } #ie .cascadingMenu li:hover { display: block; } #ie .cascadingMenu .containerMenu li:hover { display: inline; }
+	/* cascade to left */ .cascadingMenu ul li.left:hover ul, .cascadingMenu li.left:hover .containerMenu, .cascadingMenu ul li.left.menuover ul, .cascadingMenu li.left.menuover .containerMenu { left: auto; right: 0; }.cascadingMenu ul li.left:hover ul ul, .cascadingMenu ul li.left.menuover ul ul { left: -9999px; }.cascadingMenu ul li.left ul li:hover ul ul, .cascadingMenu ul li.left.menuover ul li.menuover ul ul, .cascadingMenu ul li.left.menuover ul ul ul { left: 0; right: auto; width: auto; }
+	/* long menu class */.cascadingMenu li.long ul { position: absolute; }.cascadingMenu li.long ul ul { position: static; }.cascadingMenu li.long a { position: relative; z-index: 2; }.cascadingMenu li.long li a { position: static; z-index: auto; } /* Disable on table devices */ @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) { .cascadingMenu li.long .containerMenu { height: auto !important; overflow: hidden !important; } .cascadingMenu li.long ul { position: static; } }
+	/* editable section */
+	/* adjust to have menu cascade left */.cascadingMenu ul li.left:hover ul li:hover ul, .cascadingMenu ul li.left.menuover ul li.menuover ul { left: -250px; }
+	.cascadingMenu li:hover li:hover ul, .cascadingMenu li.menuover li.menuover ul { left: 195px; top: 0; }
+	.cascadingMenu ul ul, .cascadingMenu .containerMenu, .cascadingMenu li.long .containerMenu ul { width: 195px; background: #084b76; padding: 10px 0; border-left: 1px solid #fff; } /* Set Width of menus */
+	.cascadingMenu ul ul ul { border: 0;}
+	.cascadingMenu li.megaMenu .containerMenu { width: 960px; }
+	.cascadingMenu li.megaMenu .containerMenu .col { float: left; width: 24.5%; }
+	.cascadingMenu li li a { color: #fff; padding: 4px 11px; text-decoration: none; font-size: 12px;}
+	.cascadingMenu li li a:hover, .cascadingMenu li li a:focus, .cascadingMenu li li a.current { background: #eeb745; color: #fff; }	
+	/* uncomment to get sublists .cascadingMenu ul ul ul { position: static; }*/
+/* END CASCADING MENU */
+
+/* Vertical Specific Magic */
+	#navigationPractice.cascadingMenu li { float: none; }#ie #navigationPractice.cascadingMenu li { float: left; clear: left;}#ie #navigationPractice.cascadingMenu li li { float: none;}#ie #navigationPractice.cascadingMenu { display:inline-block; }#navigationPractice.cascadingMenu ul li:hover ul ul, #navigationPractice.cascadingMenu ul li.menuover ul ul { left: -9999px; top: 0; }#navigationPractice.cascadingMenu ul ul a { width: auto; }#navigationPractice.cascadingMenu li.long .containerMenu ul { left: 0; }
+	#navigationPractice.cascadingMenu ul a { width: 222px; }
+	#navigationPractice.cascadingMenu li:hover ul, #navigationPractice.cascadingMenu li.menuover ul,
+	#navigationPractice.cascadingMenu li:hover .containerMenu, #navigationPractice.cascadingMenu li.menuover .containerMenu { left: 222px; top:0; } /* Set Left Position */
+	#navigationPractice.cascadingMenu ul li:hover ul li:hover ul, #navigationPractice.cascadingMenu ul li.menuover ul li.menuover ul { left: 195px; } /* Reset width back to width of Menu */
+
+/*BLOG*/
+#navigationBlog {  }
+	.group { }
+		/* group headings = h4. sIFR is okay to use */
+		.group h4 { color: #084b76; text-transform: uppercase; font-size: 12px; padding: 0; }
+		/* ul color = bullet color */
+		.group ul { list-style: none; padding: 9px 0 24px; margin: 0; }
+		.group ul li { display: inline; }
+		.group a { display: block; padding: 0 0 7px 20px; font-size: 12px; color: #666666; background:url(../images/bg-blog-link.png) left 5px no-repeat; }
+		.group a:hover, .group a:focus, .group a.current { color: #084b76; }
+#tagCloud ul { list-style: none; }
+	#tagCloud li { display: inline; margin: 0 5px 0 0; padding: 0; line-height: 1.2; background: none; border: 0; }
+		#tagCloud li a { display: inline; background: none; padding: 0; }
+		#tagCloud .tagRank1  { font-size: 20px; }
+		#tagCloud .tagRank2  { font-size: 19px; }
+		#tagCloud .tagRank3  { font-size: 18px; }
+		#tagCloud .tagRank4  { font-size: 19px; }
+		#tagCloud .tagRank5  { font-size: 18px; }
+		#tagCloud .tagRank6  { font-size: 15px; }
+		#tagCloud .tagRank7  { font-size: 12px; }
+		#tagCloud .tagRank8  { font-size: 11px; }
+		#tagCloud .tagRank9  { font-size: 10px; }
+		#tagCloud .tagRank10 { font-size: 9px; }
+.post { clear: both; border-top: 1px solid #eaeaea; padding: 30px 0; }
+.postFirst { border: none; padding-top: 0; }
+	.post h2 { padding: 0 0 3px; }
+		/* on the blog homepage, h2 are links */
+		.post h2 a { color: #0361c2; text-decoration: none; }
+		.post h2 a:hover, .post h2 a:focus, .post h2 a.current { color: #0361c2; text-decoration: underline; }
+	.byline { }
+		.byline a { color: #000; text-decoration: none; font-weight: bold; }
+		.byline a:hover { color: #000; text-decoration: underline;}
+	.containerPostContent { }
+		.postContent { }
+		.postMeta { clear: both; }
+			.postMeta a { color: #666666; text-decoration: underline;  }
+			.postMeta a:hover { color: #000; text-decoration: underline;}
+			.postMeta p { padding: 0 0 5px; }
+			.postMeta p.tags { }
+			.postMeta p.commentCount { }
+			.postMeta p.share { }
+#comments { }
+	#comments h2 { }
+	.containerComment { clear: both; padding: 14px 0 5px; }
+		.containerComment .byline { }
+		.comment { }
+			.commentContent { }
+#containerBlogCommentForm, #containerBlogCommentForm *, #containerBlogCommentFormAutofill, #containerBlogCommentFormAutofill * { margin: 0; padding: 0; }
+		#blogCommentForm fieldset, #blogCommentFormAutofill fieldset { border: none; }
+			#blogCommentForm fieldset legend span, #blogCommentForm fieldset label span, #blogCommentFormAutofill fieldset legend span, #blogCommentFormAutofill fieldset label span, #blogCommentFormAutofill fieldset label.formLabelHide { position: absolute; left: -9999px; }
+			#blogCommentForm fieldset label, #blogCommentFormAutofill fieldset label { cursor: pointer; }
+			#blogCommentForm fieldset .formHide, #blogCommentFormAutofill fieldset label.formHide { display: none; }
+				#blogCommentForm fieldset #formError strong, #blogCommentFormAutofill fieldset #formError strong { font-weight: normal; }
+			#blogCommentForm fieldset input.intakeFormHiddenInput, #blogCommentFormAutofill fieldset input.intakeFormHiddenInput { padding: 0; }
+			#blogCommentForm fieldset textarea, #blogCommentFormAutofill fieldset textarea { height: 100px; }
+/* BLOG COMMENT FORM - Common Edits */
+/* text color, size */
+#containerBlogCommentForm, #containerBlogCommentFormAutofill { font-family: Verdana, Geneva, sans-serif; }
+	#containerBlogCommentForm p, #containerBlogCommentFormAutofill p { padding: 0 0 5px 0; color: #aa9272; }
+	#blogCommentForm, #blogCommentFormAutofill { padding: 15px 0 0 0; }
+			/* form error color */
+			#blogCommentForm fieldset #formError, #blogCommentFormAutofill fieldset #formError { display: block; cursor: default; color: #f00; }
+			#blogCommentFormAutofill fieldset #formError { padding: 0 0 2px 0; }
+			/* input width, margin, padding, color */
+			#blogCommentForm fieldset input, #blogCommentForm fieldset textarea, #blogCommentFormAutofill fieldset input, #blogCommentFormAutofill fieldset textarea { display: block; width: 470px; margin: 2px 0 5px; padding: 5px 10px; background: #f4f4f4; color: #666666; }
+			/* input border color */
+			#blogCommentForm fieldset div.formHighlight *, #blogCommentFormAutofill fieldset div.formHighlight * { border: 1px solid #f4f4f4; }
+			/* input bg color on hover */
+			#blogCommentForm fieldset div.formHighlight *:hover, #blogCommentForm fieldset div.formHighlight *:focus, #blogCommentFormAutofill fieldset div.formHighlight *:hover, #blogCommentFormAutofill fieldset div.formHighlight *:focus {  }
+				/* disclaimer link color */
+				#blogCommentForm fieldset .formCheck a:link, #blogCommentForm fieldset .formCheck a:visited, #blogCommentFormAutofill fieldset .formCheck a:link, #blogCommentFormAutofill fieldset .formCheck a:visited { color: #bb9b65; text-decoration: underline; }
+				#blogCommentForm fieldset .formCheck a:hover, #blogCommentForm fieldset .formCheck a:focus, #blogCommentFormAutofill fieldset .formCheck a:hover, #blogCommentFormAutofill fieldset .formCheck a:focus { color: #bb9b65; text-decoration: none;  }
+		#blogCommentFormAutofill fieldset #comment-submit, #blogCommentFormAutofill fieldset #comment-cancel, #blogCommentFormAutofill fieldset #comment-preview { width: auto; height: auto; margin: 5px 0; padding: 0; }
+.pagination { clear: both; border-top: 1px solid #eaeaea; padding: 19px 0; float: left; width: 100%; }
+	.pagination ol { list-style: none; padding: 0; }
+		.pagination li { float: left; margin-right: 5px; }
+		.pagination li.resultsPrevious { margin-right: 5px; }
+		.pagination li.resultsNext {  }
+.fb-like, .twitter-share-button, .g-plusone { min-width: 110px; } .fb-like { top: -2px; }
+
+
+/*andrew added*/
+    /* select with custom icons */
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item {
+      padding: 0.5em 0 0.5em 3em;
+	  width: 290px;
+    }
+    .ui-selectmenu-menu .ui-menu.customicons .ui-menu-item .ui-icon {
+      height: 24px;
+      width: 24px;
+      top: 0.1em;
+    }
+	.ui-selectmenu-button .ui-menu{
+		width:225px;
+		}
+	#filesB{
+		width:290px;
+		}
+		
+	span.ui-selectmenu-text {
+    font-weight: bold;
+}
+
+	
+    .ui-icon.video {
+      background: url("images/24-video-square.png") 0 0 no-repeat;
+    }
+    .ui-icon.podcast {
+      background: url("images/24-podcast-square.png") 0 0 no-repeat;
+    }
+    .ui-icon.rss {
+      background: url("images/24-rss-square.png") 0 0 no-repeat;
+    }
+ 
+    /* select with CSS avatar icons */
+    option.avatar {
+      background-repeat: no-repeat !important;
+      padding-left: 20px;
+    }
+    .avatar .ui-icon {
+      background-position: left top;
+    }
+	
+	#vid fieldset label {
+    font-weight: bold;
+	font-size: 20px;
+}

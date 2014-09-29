@@ -1,0 +1,36 @@
+div.findlawPlayer.dropDown object.BrightcoveExperience { position: absolute; z-index: 5; }
+
+div.findlawPlayer.dropDown.large { height: 360px; }
+div.findlawPlayer.dropDown.medium { height: 288px; }
+div.findlawPlayer.dropDown.small { height: 216px; }
+div.findlawPlayer.dropDown.tiny { height: 162px; }
+
+
+/* the overlayed element */
+div.overlay {
+	
+	/* initially overlay is hidden */
+	display:none;
+	
+	/* growing background image */
+	background:#fff;
+	border-radius:10px;
+	box-shadow: 0 0 15px #333;
+	/* some padding to layout nested elements nicely  */
+	padding:10px;
+	padding-right:0;
+	/* a little styling */	
+	font-size:11px;
+	overflow: visible !important;
+}
+
+/* default close button positioned on upper right corner */
+div.overlay a.close, div.overlay a.close {
+	background:url(/includes/video/html5/images/close.png) transparent;
+	position:absolute; right:-15px; top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+	display: block;
+
+}
