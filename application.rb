@@ -8,22 +8,42 @@ set :protection, false
 set :public_dir, Proc.new { File.join(root, "_site") }
 
 post '/send_email' do
+  if recaptcha_valid?
+    res = Pony.mail(
+      :from => params[:name] + "<" + params[:email] + ">",
+      :to => 'andrew.nero@gmail.com',
+      :subject => "pllease " + params[:subject],
+      :body => params[:message],
+      :via => :smtp,
+      :via_options => {
+        :address              => 'smtp.sendgrid.net',
+        :port                 => '587',
+        :enable_starttls_auto => true,
+        :user_name            => ENV['SENDGRID_USERNAME'],
+        :password             => ENV['SENDGRID_PASSWORD'],
+        :authentication       => :plain,
+        :domain               => 'heroku.com'
+      })
+    content_type :json
+    if res
+      { :message => 'success' }.to_json
+    else
+      { :message => 'failure_email' }.to_json
+    end
+  else
+    { :message => 'failure_captcha' }.to_json
+  end
+end
 
-	# -*- encoding: utf-8 -*-
-	require 'sendgrid_ruby'
-	require 'sendgrid_ruby/version'
-	require 'sendgrid_ruby/email'
+not_found do
+  File.read('_site/404.html')
+end
 
-	sendgrid = SendgridRuby::Sendgrid.new('apnero', 'malamute')
-
-	mail = SendgridRuby::Email.new
-	mail.add_to('andrew.nero@gmail.com')
-		.set_from('andrew.nero@gmail.com')
-		.set_subject('Subject goes here')
-		.set_text('Hello Wofdsfdsrdld!')
-		.set_html('<strong>Hello World!</strong>')
-
-	response = sendgrid.send(mail)
-	puts response
-	
+get '/*' do
+  file_name = "_site#{request.path_info}/index.html".gsub(%r{\/+},'/')
+  if File.exists?(file_name)
+    File.read(file_name)
+  else
+    raise Sinatra::NotFound
+  end
 end

@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 
-gem 'jekyll'
-gem 'rake'
-gem 'foreman'
-gem 'sendgrid_ruby'
+gem 'rack'
+gem 'rack-recaptcha'
 gem 'sinatra'
+gem 'pony'
+gem 'json'
