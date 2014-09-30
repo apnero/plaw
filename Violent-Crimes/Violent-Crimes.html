@@ -107,9 +107,6 @@
 <input name="serverTime" type="hidden" value="1410990068"/>
 <input type="hidden" name="SubscriptionID" value="1623651"/>
 <input type="hidden" name="email_subject" value="Paoletti Law Message From Paolettilaw.net"/>
-<input type="hidden" name="removeFLBranding" value="false"/>
-<input type="hidden" name="guid" value="oTTmlTH0Ytcmr8llEFuJjrYamr0Hh/X7LtGKD6fztaJSGVfhZvz+OqOjOd5LdJDWulg9BLtz+oMDErw0dizPovRo4afKcjEQxrDZ6p8nQl7BVujl5aOVELIPRR35pn+g/ozQJPONI8gVAa6oQlHutmo5kAfHvqTUiC/m5ez8Lu0="/>
-<input type="hidden" name="wld_id" value="2304720"/>
 <input type="hidden" name="thankyouPage" value="Thank-You"/>
 <fieldset>
 <legend><span>Contact Information</span></legend>
@@ -158,6 +155,28 @@ The use of the Internet or this form for communication with the firm or any indi
 </form>
 </div>
 </div>
+
+<form id="contact-form" class="contact-form" method="post" data-success="Message successfully sent!">
+
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" class="field" required autofocus /><br/>
+
+  <label for="email">E-mail</label>
+  <input id="email" type="email" name="email" class="field" required /><br/>
+
+  <label for="subject">Subject</label>
+  <input id="subject" type="text" name="subject" class="field" required /><br/>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" required ></textarea><br/>
+
+ 
+  <button type="submit">Send</button>
+</form>
+					
+					
+					
+					
 	<div id="containerVideo">
 	  <video id="div_video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="306" height="180" poster="/design/images/video/ui-id-1.jpg" data-setup="{}">  
 		<source src=""  type="video/mp4">
@@ -527,11 +546,7 @@ The use of the Internet or this form for communication with the firm or any indi
 	  
     });
  
-    $( "#filesA" )
-      .iconselectmenu()
-      .iconselectmenu( "menuWidget" )
-        .addClass( "ui-menu-icons" );
- 
+
      $( "#filesB" )
       .iconselectmenu()
       .iconselectmenu( "menuWidget" )
@@ -539,7 +554,7 @@ The use of the Internet or this form for communication with the firm or any indi
 		
 	
 		
-				     var $target         = arguments[0].target.id;
+	var $target         = arguments[0].target.id;
     var $content_path   = "/design/images/video/";
     var $vid_obj        = _V_("div_video");
 	
@@ -570,25 +585,44 @@ The use of the Internet or this form for communication with the firm or any indi
 		}); 
 		}); 
 		
-	
-	
-
-		
- 
-    $( "#people" )
-      .iconselectmenu()
-      .iconselectmenu( "menuWidget")
-        .addClass( "ui-menu-icons avatar" );
-		
-		
 		
   });
   
 
-    
-    
-
   </script>
+  
+  <script>
+  		$("contact-form").submit(function(ev) {
+			  ev.preventDefault();
+			  
+			  $.ajax({
+				type: 'POST',
+				url: contactFormHost + 'send_email',
+				data: form.serialize(),
+				dataType: 'json',
+				success: function(response) {
+				  switch (response.message) {
+					case 'success':
+					  form.fadeOut(function() {
+						form.html('<h4>' + form.data('success') + '</h4>').fadeIn();
+					  });
+					  break;
+
+					case 'failure_captcha':
+					  showRecaptcha('recaptcha_widget');
+					  notice.text(notice.data('captcha-failed')).fadeIn();
+					  break;
+
+					case 'failure_email':
+					  notice.text(notice.data('error')).fadeIn();
+				  }
+				},
+				error: function(xhr, ajaxOptions, thrownError) {
+				  notice.text(notice.data('error')).fadeIn();
+				}
+      });
+	});
+	</script>
 
   
 <!--[if IE 6]> </div> <![endif]-->
