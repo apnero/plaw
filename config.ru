@@ -8,4 +8,7 @@ use Rack::Recaptcha, :public_key => '6LdIIvsSAAAAALI3bWd2cp-MZAMxYc9ZwmPNexpZ', 
 helpers Rack::Recaptcha::Helpers
 
 require './application'
-run Sinatra::Application
+
+require "rack/jekyll"
+
+run Rack::Jekyll.new
