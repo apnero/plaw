@@ -18,6 +18,7 @@ post '/send_email' do
 	require 'sendgrid_ruby'
 	require 'sendgrid_ruby/version'
 	require 'sendgrid_ruby/email'
+	require 'dotenv'
 
 	config = Dotenv.load
 	sendgrid_username = 'app30181830@heroku.com'	#ENV["SENDGRID_USERNAME"]
