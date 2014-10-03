@@ -43,7 +43,6 @@ post '/send_email' do
 	response = sendgrid.send(email)
 	puts response
 
-	:message => 'success' }.to_json
 
 
 end
