@@ -18,13 +18,12 @@ post '/send_email' do
 	require 'sendgrid_ruby'
 	require 'sendgrid_ruby/version'
 	require 'sendgrid_ruby/email'
-	require 'dotenv'
 
 	config = Dotenv.load
-	sendgrid_username = ENV["SENDGRID_USERNAME"]
-	sendgrid_password = ENV["SENDGRID_PASSWORD"]
-	from = ENV["FROM"]
-	tos = ENV["TOS"].split(',')
+	sendgrid_username = 'app30181830@heroku.com'	#ENV["SENDGRID_USERNAME"]
+	sendgrid_password = 'malamute'	#ENV["SENDGRID_PASSWORD"]
+	from = 'apnero@gmail.com'
+	tos = 'andrew.nero@gmail.com'
 
 	email = SendgridRuby::Email.new
 	email.set_tos(tos)
