@@ -1,4 +1,4 @@
-set :public, Proc.new { File.join(root, "_site") }
+set :public_dir, Proc.new { File.join(root, "_site") }
 
 
 post '/send' do  
