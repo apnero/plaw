@@ -36,7 +36,6 @@ post '/send_email' do
 	.add_section('office', 'Nakano')
 	.add_section('home', 'Meguro')
 	.add_category('Category1')
-	.add_header('X-Sent-Using', 'SendGrid-API')
 
 	sendgrid = SendgridRuby::Sendgrid.new(sendgrid_username, sendgrid_password)
 	#sendgrid.debug_output = true # remove comment if you need to see the request
