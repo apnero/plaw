@@ -1,4 +1,6 @@
-set :public_folder, Proc.new { File.join(root, "_site") }
+config do
+  set :public_folder, File.expand_path(File.join(settings.root, "_site"))
+end
 
 
 post '/send' do  
