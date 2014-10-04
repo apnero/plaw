@@ -1,7 +1,4 @@
-config do
-  set :public_folder, File.expand_path(File.join(root, "_site"))
-end
-
+set :public_folder, File.expand_path(File.join(settings.root, "_site"))
 
 post '/send' do  
   if recaptcha_valid?
