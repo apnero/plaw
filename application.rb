@@ -1,4 +1,5 @@
-set :public_folder, File.expand_path(File.join(settings.root, "_site"))
+set :public, Proc.new { File.join(root, "_site") }
+
 
 post '/send' do  
   if recaptcha_valid?
