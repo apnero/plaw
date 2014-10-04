@@ -1,4 +1,5 @@
 set :public_dir, Proc.new { File.join(root, "_site") }
+set :views, Proc.new { File.join(File.dirname(__FILE__), "views") }
 
 
 post '/send' do  
