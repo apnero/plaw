@@ -56,6 +56,11 @@ not_found do
     File.read('/_site/404.html')
 end
 
+get '/' do  
+    "Hello World"
+end
+
+
 get '/*' do  
     file_name = "_site#{request.path_info}/index.html".gsub(%r{\/+},'/')
     if File.exists?(file_name)
