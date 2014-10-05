@@ -1,0 +1,59 @@
+/* FS PUBLISHER - PRINT STYLESHEET - UPDATED 02.17.12 */
+
+body { font-family: "Times New Roman", Times, serif; font-size: 11px; }
+body img { display: none; }
+a { text-decoration: underline; color: #000; }
+
+/* DEFINE CONTENT COLOR */
+#content { color: #000; }
+
+/* HEADERS */
+h1 { font-size: 15px; text-align: left; border-bottom: 1px solid #000; padding-bottom: 8px; }
+h2, #content legend, h3, h4, h5, h6 { font-size: 13px; padding-bottom: 0; }
+
+/* sIFR STYLES */
+.sIFR-flash, .sIFR-flash object, .sIFR-flash embed { display: none; }
+
+/* STANDARD ELEMENTS */
+.screenElement, .handheldElement { display: none; }
+#content .callOut { padding: 11px; background: #fff; color: #000; margin-bottom: 13px; border: 1px solid #000; }
+
+/* PRACTICE PAGES/CENTERS */
+#practiceCenterCallToAction, #practicePageCallToAction { border: double 3px #000; padding: 11px; }
+#practiceCenterResourceLinksAbstract a:link: after, #practiceCenterResourceLinksAbstract a:visited: after, #practicePageLinksAbstract a:link: after, #practicePageLinksAbstract a:visited: after { content: " (" attr(href) ") "; font-style: italic; text-decoration: none; }
+#practiceCenterSidebar1, #practicePageSidebar1, #practiceCenterSidebar2, #practicePageSidebar2 { border: solid 1px #000; padding: 11px; margin: 11px 0; }
+.practiceCenterError { color: #f00; font-weight: bold; }
+#practiceCenterNavigation, .practiceCenterTitle, #practiceCenterFamilyLawCalculator, #practiceCenterResourceLinksAbstract hr, #practiceCenterFormShort, #practicePageFormShort { display: none; }
+
+/* INTAKE FORMS */
+#containerIntakeFormI, #containerIntakeFormI *, .containerIntakeFormIII, .containerIntakeFormIII *, #containerIntakeFormIV, #containerIntakeFormIV *, #containerEmailObfuscation, #containerEmailObfuscation * { display: none; }
+
+/* STANDARD CUSTOM ELEMENTS */
+#banner { background: none; height: auto; position: static; }
+#containerFlash, #containerVideo, #content img, #flashPosition, h2.attorneyProfileName, img#contextual, #geographicalFooter, #navigationSocial { display: none; }
+/* NAVIGATION */
+#navigationMain, #navigationPractice, #navigationBlog, #navigationLower, #navigationFeatures, #navigationBreakout, #navigationTools, .cascadingMenu, .pagination { display: none; }
+
+/* TURN OFF FORMS */
+#containerShortForm, #containerIntakeFormShort, #containerIntakeFormShortAutofill, #containerSearchFormDesign, #containerSearchForm, #containerBlogCommentForm, #containerBlogCommentFormAutofill, #pagination { display: none; }
+
+/* STYLES */
+#logo, #cta { display: block; background: none; height: auto; width: auto; position: static; text-decoration: none; padding-bottom: 10px; }
+#logo { font-size: 16px; }
+#logo span, #cta a, h4.offscreen, #tagline, #practiceTitle, img#logo { display: none; }
+#cta span { display: block; }
+#contactTitle { margin: 11px 0 0 0; padding: 0; border-bottom: 1px solid #000; }
+.post { padding: 0 0 10px 0; }
+	.post h2 a { text-decoration: none; }
+#contactInformation { border-top: 1px solid #000; padding: 5px 0; margin: 10px 0; }
+#finePrint { font-size: 11px; border-top: 1px solid #000; padding: 15px 0 0 0; }
+	#copyright, #branding { padding: 0; margin: 0; }
+	#googleMap, #visitSite, #subscribe { display: none; }
+	#content iframe { display:none; }
+#content { width: 90%; }
+/* CUSTOM DESIGN ELEMENTS */
+#social, #containerLogos, #containerVideo, .findlawPlayer { display: none; }
+#contactInformation em { text-transform: uppercase; font-weight: bold; font-style:normal;}
+#lettermark { display: none; }
+#containerInteractive { display: none; }
+.postMeta{display:none;}
