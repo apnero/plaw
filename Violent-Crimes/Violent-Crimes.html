@@ -139,7 +139,7 @@ The use of the Internet or this form for communication with the firm or any indi
 <p class="intakeFormShortPrivacy">
 <a href="/Paoletti/Privacy-Policy.html">Privacy Policy</a>
 </p>
-<input type="image" src="/design/images/formSubmitShort.gif" name="Submit" value="Submit" class="submit over" alt="Submit" id="intakeFormShortAutofillSubmit"/>
+<input type="image" src="/design/images/formSubmitShort.gif" name="Submit" value="Send" type="submit" class="submit over" alt="Submit" id="intakeFormShortAutofillSubmit"/>
 </form>
 </div>
 </div>
@@ -154,7 +154,6 @@ The use of the Internet or this form for communication with the firm or any indi
     <label for="message" class="label">Message</label>
     <textarea name="message" id="message"></textarea>
 
-    <div id="recaptcha_div"></div>
     <div id="notice"></div>
 
     <input class="submit" type="submit" value="Send" />
@@ -583,12 +582,12 @@ The use of the Internet or this form for communication with the firm or any indi
               if(response.message === "success") {
                   $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
               } else {
-                  $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
+                  $('#message').html("<h2>Error sending the message1</h2>").hide().fadeIn(1500);
               }
               },
               error: function(xhr, ajaxOptions, thrownError){
               $('#form').html("<div id='message'></div>");
-              $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
+              $('#message').html("<h2>Error sending the message2</h2>").hide().fadeIn(1500);
               } 
           });
 
