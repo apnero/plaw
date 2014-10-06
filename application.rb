@@ -28,21 +28,18 @@ post '/send_email' do
 	tos = 'andrew.nero@gmail.com'
 
 	email = SendgridRuby::Email.new
-	email.set_tos(tos)
-	.set_from(from)
-	.set_from_name("From name")
-	.set_subject("[sendgrid-ruby-example] Owl named fullname")
-	.set_text("familyname, what are you doing?\r\n He is in place.")
-	.set_html("<strong> familyname, what are you doing?</strong><br />He is in place.")
-	.add_section('office', 'Nakano')
-	.add_section('home', 'Meguro')
-	.add_category('Category1')
+	email.add_to('andrew.nero@gmail.com')
+	.set_from(apnero@gmail.com)
+	.set_subject("Subject goes here")
+	.set_text("Hello World!")
+	.set_html("<strong>Hello World!</strong>")
 
 	sendgrid = SendgridRuby::Sendgrid.new(sendgrid_username, sendgrid_password)
 	#sendgrid.debug_output = true # remove comment if you need to see the request
 	response = sendgrid.send(email)
+	response.message = "success"
 	puts response
-
+	
 
 
 end
@@ -54,10 +51,6 @@ end
 
 not_found do  
     File.read('/_site/404.html')
-end
-
-get '/' do  
-    "Hello World"
 end
 
 
