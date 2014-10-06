@@ -2,16 +2,6 @@ set :public_dir, Proc.new { File.join(root, "_site") }
 set :views, Proc.new { File.join(File.dirname(__FILE__), "views") }
 
 
-post '/send' do  
-  if recaptcha_valid?
-    session[:captcha] = true
-    { :message => 'success' }.to_json
-  else
-    session[:captcha] = false
-    { :message => 'success' }.to_json
-  end
-end
-
 post '/send_email' do  
 	
 
@@ -35,7 +25,7 @@ post '/send_email' do
 	.set_html("<strong>Hello World!</strong>")
 
 	sendgrid = SendgridRuby::Sendgrid.new(sendgrid_username, sendgrid_password)
-	#sendgrid.debug_output = true # remove comment if you need to see the request
+	sendgrid.debug_output = true # remove comment if you need to see the request
 	response = sendgrid.send(email)
 	response.message = "success"
 	puts response

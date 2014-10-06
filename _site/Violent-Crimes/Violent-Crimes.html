@@ -4,18 +4,6 @@
 <title>Violent Crimes Defense Attorneys in Fairfield County-Bridgeport, CT</title>
 <meta name="keywords" content="violent, crime, defense, attorney, lawyer, law firm, fairfield county, bridgeport, ct"/>
 <meta name="description" content="Contact our skilled Bridgeport violent crime defense attorneys at 203-583-8585 for a free initial consultation today."/>
-<meta name="FSAccessControl" content=""/>
-<meta name="FSChildTemplate" content="default.html"/>
-<meta name="FSDateCreation" content="02/17/12 3:12 PM"/>
-<meta name="FSDatePublish" content="02/17/12 3:12 PM"/>
-<meta name="FSFLContent" content="yes"/>
-<meta name="FSLanguage" content="en-US"/>
-<meta name="FSOnSection" content="yes"/>
-<meta name="FSOnSitemap" content="yes"/>
-<meta name="FSSearchable" content="yes"/>
-<meta name="FSWritertoolPageType" content="CustomPage"/>
-<meta name="FSSection" content="Violent-Crimes"/>
-<meta name="FSPageName" content="Violent Crimes"/>
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 <meta http-equiv="content-language" content="en-US"/>
 <meta content="Violent Crimes Defense Attorneys in Fairfield County-Bridgeport, CT" property="og:title"/>
@@ -198,13 +186,7 @@ The use of the Internet or this form for communication with the firm or any indi
 
 	</select>
   </fieldset>
-  
-<!--   <div class="wrap">
-	  <input rel="01" type="button" value="Overview">
-	  <input rel="02" type="button" value="Drug Charges">
-	  <input rel="03" type="button" value="DUI">
-	  <input rel="04" type="button" value="Domestic Violence">
-	</div> -->
+
 
 <div id="containerLogos">
 <ul>
@@ -518,11 +500,8 @@ The use of the Internet or this form for communication with the firm or any indi
 <script src="//vjs.zencdn.net/4.8/video.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-
-		
-		
-
 <script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+
   <script>
   $(function() {
     $.widget( "custom.iconselectmenu", $.ui.selectmenu, {
@@ -541,11 +520,8 @@ The use of the Internet or this form for communication with the firm or any indi
 
 		return li.appendTo( ul );
       }
-		
-    
 	  
     });
- 
 
      $( "#filesB" )
       .iconselectmenu()
@@ -591,27 +567,12 @@ The use of the Internet or this form for communication with the firm or any indi
 
   </script>
   
-<script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
 
 <script type="text/javascript">  
-  function showRecaptcha(element) {
-     Recaptcha.create("MyPublicKey", element, {
-       theme: "red",
-       callback: Recaptcha.focus_response_field});
-   }
    $(document).ready(function(){
-    showRecaptcha('recaptcha_div');
 
     $("#form").submit(function(ev){
         ev.preventDefault();
-        if (!$(this).valid()) return;
-        $.ajax({
-          type: "post",
-          url: "/send",
-          data: $('#form').serialize(),
-          dataType: "json",
-          success: function(response) {
-        if(response.message === "success") {
           $.ajax({
               type: "post",
               url: "/send_email",
@@ -630,18 +591,8 @@ The use of the Internet or this form for communication with the firm or any indi
               $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
               } 
           });
-        } else {
-          alert(response.message);
-		  showRecaptcha('recaptcha_div');
-          $('#notice').html("Captcha failed!").hide().fadeIn(1500);
-        }
-          },
-          error: function(xhr, ajaxOptions, thrownError){
-          $('#form').html("<div id='message'></div>");
-          $('#message').html("<h2>Error sending the message</h2>").hide().fadeIn(1500);
-          }
+
         });
-    });
     });
 </script>
 
