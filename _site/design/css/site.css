@@ -462,13 +462,13 @@ body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x
 
 	
     .ui-icon.video {
-      background: url("images/24-video-square.png") 0 0 no-repeat;
+      background: url("/design/images/24-video-square.png") 0 0 no-repeat;
     }
     .ui-icon.podcast {
-      background: url("images/24-podcast-square.png") 0 0 no-repeat;
+      #background: url("images/24-podcast-square.png") 0 0 no-repeat;
     }
     .ui-icon.rss {
-      background: url("images/24-rss-square.png") 0 0 no-repeat;
+      #background: url("images/24-rss-square.png") 0 0 no-repeat;
     }
  
     /* select with CSS avatar icons */

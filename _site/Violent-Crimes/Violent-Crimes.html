@@ -12,7 +12,7 @@
 <meta content="Paoletti &amp; Gusmano, Attorneys at Law" property="og:site_name"/>
 <meta property="og:url" content="http://www.paolettilaw.net/Violent-Crimes/"/>
 <meta property="og:type" content="website"/>
-<link type="text/css" rel="stylesheet" href="/design/css/site.css" media="screen, projection"/>
+
 <link type="text/css" rel="stylesheet" href="/design/css/dynamic-products.css" media="screen, projection"/>
 <link type="text/css" rel="stylesheet" href="/design/css/print.css" media="print"/>
 <link type="text/css" rel="stylesheet" href="/design/css/normalize.css" media="print"/>
@@ -21,6 +21,7 @@
 
 <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 <link href="//vjs.zencdn.net/4.7.3/video-js.css" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="/design/css/site.css" media="screen, projection"/>
 
 <link rel="author" href="https://plus.google.com/102436172588466123365/"/>
 <link rel="canonical" href="http://www.paolettilaw.net/Violent-Crimes/"/>
@@ -88,32 +89,31 @@
 <div id="containerForm">
 <h4 id="shortFormTitle" class="offscreen">Free Legal Consultation</h4>
 <div id="containerIntakeFormShortAutofill">
-<p>
+
+<form method="post" name="intakeFormShortAutofill" id="intakeFormShortAutofill" class="formAutoFill">
+<label>
 <strong>Bold</strong> labels are required.
-</p>
-<form method="post" action="/cgi-bin/emailservice.cgi" name="intakeFormShortAutofill" id="intakeFormShortAutofill" class="formAutoFill">
-<input name="serverTime" type="hidden" value="1410990068"/>
-<input type="hidden" name="SubscriptionID" value="1623651"/>
+</label>
 <input type="hidden" name="email_subject" value="Paoletti Law Message From Paolettilaw.net"/>
 <input type="hidden" name="thankyouPage" value="Thank-You"/>
 <fieldset>
 <legend><span>Contact Information</span></legend>
 <label for="intakeFormShortName">Name</label>
 <div class="formHighlight">
-<input type="text" name="Name|at:name||Please enter your name." id="intakeFormShortName" title="Name"/>
+<input type="text" name="email_name" id="intakeFormShortName" title="Name"/>
 </div>
 <label for="intakeFormShortEmail"><strong>E-mail Address</strong><img height="15" width="15" alt="This field is required." src="/design/images/formRequired.gif"/></label>
 <label for="intakeFormShortEmail" class="formHide"><strong>Please enter a valid e-mail address.</strong></label>
 <div class="formHighlight">
-<input type="text" name="E-mail Address|at:email|r|Please enter a valid e-mail address." id="intakeFormShortEmail" class="validate email" title="E-mail Address"/>
+<input type="text" name="email_address" id="intakeFormShortEmail" class="validate email" title="E-mail Address"/>
 </div>
 <label for="intakeFormShortPhone">Phone</label>
 <div class="formHighlight">
-<input type="text" name="Phone|at:phone||Please enter a valid phone number. You may use 0-9, spaces and the ( ) - + characters." id="intakeFormShortPhone" title="Phone"/>
+<input type="text" name="phone_number" id="intakeFormShortPhone" title="Phone"/>
 </div>
 <label for="intakeFormShortMessage">Brief description of your legal issue</label>
 <div class="formHighlight">
-<textarea name="Brief description of your legal issue|at:message||Please describe your legal issue." id="intakeFormShortMessage" title="Brief description of your legal issue" rows="4" cols="15"></textarea>
+<textarea name="email_message" id="intakeFormShortMessage" title="Brief description of your legal issue" rows="4" cols="15"></textarea>
 </div>
 <div class="formCheck">
 <label for="intakeFormShortDisclaimerCheck" class="formHide">
@@ -139,31 +139,11 @@ The use of the Internet or this form for communication with the firm or any indi
 <p class="intakeFormShortPrivacy">
 <a href="/Paoletti/Privacy-Policy.html">Privacy Policy</a>
 </p>
-<input type="image" src="/design/images/formSubmitShort.gif" name="Submit" value="Send" type="submit" class="submit over" alt="Submit" id="intakeFormShortAutofillSubmit"/>
+<input type ="image" src="/design/images/formSubmitShort.gif" name="Submit" value="Send" type="submit" class="submit" alt="Submit" id="intakeFormShortAutofillSubmit"/>
 </form>
 </div>
 </div>
-
-<form id="form" method="post">  
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" />
-
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email" />
-
-    <label for="message" class="label">Message</label>
-    <textarea name="message" id="message"></textarea>
-
-    <div id="recaptcha_div"></div>
-    <div id="notice"></div>
-
-    <input class="submit" type="submit" value="Send" />
-</form>
-
-
-					
-					
-					
+			
 					
 	<div id="containerVideo">
 	  <video id="div_video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="306" height="180" poster="/design/images/video/ui-id-1.jpg" data-setup="{}">  
@@ -179,10 +159,10 @@ The use of the Internet or this form for communication with the firm or any indi
 	  <fieldset id="vid">
     <label style="font-weight: bold; font-size: 18px;" for="filesB">Select a Video:</label>
     <select name="filesB" id="filesB">
-      <option rel="01" type="button" value="mypodcast" data-class="podcast">Overview:  Paoletti & Gusmano, Attorneys at Law handles all aspects of Criminal Defense.</option>
+      <option rel="01" type="button" value="mypodcast" data-class="video">Overview:  Paoletti & Gusmano, Attorneys at Law handles all aspects of Criminal Defense.</option>
       <option rel="02" type="button" value="myvideo" data-class="video">Drug Charges: In a Drug Charge case we look at all the option, such as the validity of the arrest, the search, and the stop.</option>
-      <option rel="03" type="button" value="myrss" data-class="rss">DUI Charges:  The Alcohol Education Program is a diversionary program where a person can avoid being prosecuted.</option>
-      <option rel="04" type="button" value="myrss" data-class="rss">Domestic Violence:  There are many consequences that can be associated with the conviction on a domestic violence charge.</option>
+      <option rel="03" type="button" value="myrss" data-class="video">DUI Charges:  The Alcohol Education Program is a diversionary program where a person can avoid being prosecuted.</option>
+      <option rel="04" type="button" value="myrss" data-class="video">Domestic Violence:  There are many consequences that can be associated with the conviction on a domestic violence charge.</option>
 
 	</select>
   </fieldset>
@@ -571,24 +551,26 @@ The use of the Internet or this form for communication with the firm or any indi
 <script type="text/javascript">  
    $(document).ready(function(){
 
-    $("#form").submit(function(ev){
-        ev.preventDefault();
+    $("#intakeFormShortAutofill").submit(function(ev){
+		ev.preventDefault();
           $.ajax({
               type: "post",
               url: "/send_email",
-              data: $('#form').serialize(),
-              dataType: "json",
+              data: $('#intakeFormShortAutofill').serialize(),
+			  dataType: "json",
               success: function(response) {
-              $('#form').html("<div id='message'></div>");
-              if(response.message === "success") {
-                  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
-              } else {
-                  $('#message').html("<h2>Error sending the message1</h2>").hide().fadeIn(1500);
-              }
+					alert('here1');
+				  $('#intakeFormShortAutofill').html("<div id='message'></div>");
+				  if(response.message == "success") {
+					  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
+				  } else {
+					  $('#message').html("<h2>Error sending the message1</h2>").hide().fadeIn(1500);
+				  }
               },
               error: function(xhr, ajaxOptions, thrownError){
-              $('#form').html("<div id='message'></div>");
-              $('#message').html("<h2>Error sending the message2</h2>").hide().fadeIn(1500);
+			  alert('here2');
+			   $('#intakeFormShortAutofill').html("<div id='message'></div>");
+				  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
               } 
           });
 

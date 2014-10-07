@@ -9,26 +9,24 @@ post '/send_email' do
 	require 'sendgrid_ruby'
 	require 'sendgrid_ruby/version'
 	require 'sendgrid_ruby/email'
-	require 'dotenv'
+	require 'sendgrid-ruby'
+	require 'json'
 
-	config = Dotenv.load
 	sendgrid_username = 'app30181830@heroku.com'	#ENV["SENDGRID_USERNAME"]
 	sendgrid_password = 'malamute'	#ENV["SENDGRID_PASSWORD"]
-	from = 'apnero@gmail.com'
-	tos = 'andrew.nero@gmail.com'
-
+	
 	email = SendgridRuby::Email.new
 	email.add_to('andrew.nero@gmail.com')
-	.set_from(apnero@gmail.com)
-	.set_subject("Subject goes here")
-	.set_text("Hello World!")
-	.set_html("<strong>Hello World!</strong>")
+	.set_from('andrew@plasmascape.com')
+	.set_subject(params[:email_subject])
+	.set_text("<h3>Name: #{params[:email_name]}</h3><h3>Email: #{params[:email_address]}</h3><h3>Phone: #{params[:phone_number]}</h3><p>Message: #{params[:email_message]}</h3>")
+	.set_html("<h3>Name: #{params[:email_name]}</h3><h3>Email: #{params[:email_address]}</h3><h3>Phone: #{params[:phone_number]}</h3><h3>Message: </h3><p>#{params[:email_message]}</p>")
 
+	  
 	sendgrid = SendgridRuby::Sendgrid.new(sendgrid_username, sendgrid_password)
 	sendgrid.debug_output = true # remove comment if you need to see the request
 	response = sendgrid.send(email)
-	response.message = "success"
-	puts response
+	puts response.to_json
 	
 
 
@@ -40,7 +38,7 @@ before do
 end
 
 not_found do  
-    File.read('/_site/404.html')
+    File.read('404.html')
 end
 
 
