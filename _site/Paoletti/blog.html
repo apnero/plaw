@@ -1,17 +1,9 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraphprotocol.org/schema/">
+<html lang="en">
 <head>
-<title>Violent Crimes Defense Attorneys in Fairfield County-Bridgeport, CT</title>
-<meta name="keywords" content="violent, crime, defense, attorney, lawyer, law firm, fairfield county, bridgeport, ct"/>
-<meta name="description" content="Contact our skilled Bridgeport violent crime defense attorneys at 203-583-8585 for a free initial consultation today."/>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<meta http-equiv="content-language" content="en-US"/>
-<meta content="Violent Crimes Defense Attorneys in Fairfield County-Bridgeport, CT" property="og:title"/>
-<meta content="Contact our skilled Bridgeport violent crime defense attorneys at 203-583-8585 for a free initial consultation today." property="og:description"/>
-<meta content="en_US" property="og:locale"/>
-<meta content="Paoletti &amp; Gusmano, Attorneys at Law" property="og:site_name"/>
-<meta property="og:url" content="http://www.paolettilaw.net/Violent-Crimes/"/>
-<meta property="og:type" content="website"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title></title>
+<meta name="description" content=/>
 
 <link type="text/css" rel="stylesheet" href="/design/css/dynamic-products.css" media="screen, projection"/>
 <link type="text/css" rel="stylesheet" href="/design/css/print.css" media="print"/>
@@ -24,7 +16,7 @@
 <link type="text/css" rel="stylesheet" href="/design/css/site.css" media="screen, projection"/>
 
 <link rel="author" href="https://plus.google.com/102436172588466123365/"/>
-<link rel="canonical" href="http://www.paolettilaw.net/Violent-Crimes/"/>
+<link rel="canonical" href="http://www.paolettilaw.net/"/>
 </head>
 
 <body class="design">
@@ -44,11 +36,10 @@
 <div id="callnow">CALL NOW</div>
 <div id="call-now-phone">
 <ul>
-<li>203-583-8585 <span>LOCAL</span></li>
-<li>888-854-6907 <span>TOLL FREE</span></li>
+<li>203-583-8585</li>
 </ul>
 </div>
-<span class="offscreen">Call now 203-583-8585 Local | 888-854-6907 Toll Free</span>
+<span class="offscreen">Call now 203-371-1000</span>
 </div>
 <img src="/design/images/tagline.png" id="tagline" alt="Call Today - Credit Cards Accepted - Phones Answered 24/7 - Free Initial Consultation" width="807" height="12"/>
 <img src="/design/images/tagline2.png" id="tagline2" alt="Nearly 50 Years of Combined Experience" width="444" height="28"/>
@@ -71,7 +62,7 @@
 <form action="/Paoletti/Search-Results.html" method="get" class="formAutoFill" name="searchFormDesign" id="searchFormDesign">
 <label for="searchFormDesignSearchTerms">Search</label>
 <input name="stext" type="text" id="searchFormDesignSearchTerms" title="Search our site"/>
-<input type="image" src="/design/images/searchFormDesignSubmit.gif" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" value="Search" alt="Search"/>
+<input type="image" src="/design/images/searchFormDesignSubmit.gif" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" alt="Search"/>
 </form>
 </div>
 </div>
@@ -85,287 +76,23 @@
   <h1 class="page-heading">Posts</h1>
 
   <ul class="post-list">
-    
+    {% for post in site.posts %}
       <li>
-        <span class="post-meta">Sep 19, 2014</span>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
         <h2>
-          <a class="post-link" href="/criminal-defense/2014/09/19/criminal-charges-the-importance-of-the-pretrial-conference.html">Criminal charges: The importance of the pretrial conference</a>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 		
-		
-        <span class="body">When you find out you are being charged with a crime, it is normal to immediately begin thinking about what will happen at the trial and what the eventual outcome will be. It is important, however, to take each step in the criminal court process as it comes, and try to stay focused on the task at hand instead of what will happen later on.</span>
-        
+		{% if post.description %}
+        <span class="body">{{ post.description | strip_html }}</span>
+        {% else %}
+        <span class="body">{{ post.excerpt | strip_html }}</span>
+        {% endif %}
 		
 		
       </li>
-    
-      <li>
-        <span class="post-meta">Sep 12, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/drug-charges/2014/09/12/drug-charges-what-you-need-to-know.html">Drug charges: What you need to know</a>
-        </h2>
-		
-		
-        <span class="body">Many states are prosecuting drug crimes with increasing aggressiveness, and Connecticut is no different. Depending on the amount of the substance and the substance itself, drug convictions can come with serious penalties, including significant prison time. Understanding what your charges mean and the possible penalties is crucial to understanding your criminal defense options</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Sep 3, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/drunk-driving/2014/09/03/drunk-driving-possible-penalties.html">Drunk driving: Possible penalties</a>
-        </h2>
-		
-		
-        <span class="body">Connecticut takes driving under the influence seriously, and that can mean serious penalties for those convicted. In this state, drivers are considered over the legal limit if they are over the age of 21 with a blood alcohol content of .08 or above or under 21 with a blood alcohol content of .02 or above. Knowing the possible consequences can help drunk driving defendants get a better understanding of their cases and their options.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 29, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/domestic-violence/2014/08/29/domestic-violence-does-there-have-to-be-physical-proof.html">Domestic violence: Does there have to be physical proof?</a>
-        </h2>
-		
-		
-        <span class="body">While physical evidence such as photographs of bruising can certainly result in domestic violence charges, physical proof of an alleged altercation does not have to be present for an individual to be charged with domestic violence in Connecticut. If physical documentation does exist, however, it can have serious implications for the defendants.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 22, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/violent-crimes/2014/08/22/murder-conviction-overturned-case-could-be-headed-back-to-trial.html">Murder conviction overturned, case could be headed back to trial</a>
-        </h2>
-		
-		
-        <span class="body">A Connecticut man who had previously sentenced to 60 years in prison after being found guilty of murder has now succeeded in getting the conviction overturned and may be headed for a new trial. According to reports, the man was convicted of murder in 2011 after he was accused of fatally shooting another man outside of the Cardinal's Club on April 27, 2008.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 15, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/criminal-defense/2014/08/15/connecticut-police-officer-accused-of-stomping-on-suspect.html">Connecticut police officer accused of stomping on suspect</a>
-        </h2>
-		
-		
-        <span class="body">A police officer in Connecticut has been arrested and charged for allegedly stomping on a man's head after the man was already on the ground. The man had been shot with a taser before he was stomped on. The charges say that this alleged attack was a violation of that man's rights, and a video of the incident has now surfaced.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 8, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/drug-charges/2014/08/08/two-arrested-on-drug-charges-at-connecticut-motel.html">Two arrested on drug charges at Connecticut motel</a>
-        </h2>
-		
-		
-        <span class="body">Two Connecticut residents are facing drug charges after police arrested them at a motel in Manchester. According to reports, police had the Studio 6 Motel under surveillance when they were told that a man and prostitute were reportedly meeting in one of the hotel's rooms. Officers say they watched as the 44-year-old man knocked on the door of the room and threw what they later identified as heroin into a garbage can.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Aug 1, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/drunk-driving/2014/08/01/man-facing-dui-after-picking-up-son-from-police.html">Man facing DUI after picking up son from police</a>
-        </h2>
-		
-		
-        <span class="body">A Connecticut man has been charged with drunk driving after he allegedly exhibited signs of intoxication when he went to pick up his son. According to reports, the Oxford man's 15-year-old son had been detained at the Naugatuck State Forest by officers after he allegedly had been caught riding a motor scooter illegally. The teen's three friends were also detained, according to the Department of Energy and Environmental Protection.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 12, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/12/Signing-of-Connecticut-bill-means-ignition-interlocks-even-for-first-DUI.html">Signing of Connecticut bill means ignition interlocks even for first DUI</a>
-        </h2>
-		
-		
-        <span class="body">Starting next year, ignition interlocks will be required for all drunk driving offenders.  An ignition interlock is a small device that is wired into a vehicle's ignition system. The driver must blow into the device before starting the vehicle. If the ignition interlock detects a certain measurable amount of alcohol, the vehicle will not start.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 11, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/11/Warrant-required-for-police-cellphone-searches-Court-rules.html">Warrant required for police cellphone searches, Court rules</a>
-        </h2>
-		
-		
-        <span class="body">Police are now required to obtain a warrant before searching the cellphone of a person who has been placed under arrest, according to the United States Supreme Court. With certain limited exceptions, the Court's recent ruling establishes that warrantless cellphone searches by police are unconstitutional.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 10, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/10/Connecticut-bill-seeks-to-eliminate-two-hour-testing-limit-for-DUIs.html">Connecticut bill seeks to eliminate two-hour testing limit for DUIs</a>
-        </h2>
-		
-		
-        <span class="body">Under Connecticut law, motorists are prohibited from driving while under the influence of alcohol (DUI), which is otherwise known as "operating under the influence" (OUI) in the Constitution State. In most cases, a driver will face possible drunk driving charges in Connecticut if he or she is found to have an "elevated" blood alcohol content (BAC) while behind the wheel - defined under state law as a BAC of 0.08 percent or more.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 9, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/09/Questions-arise-regarding-feds-confession-tactics.html">Questions arise regarding feds’ confession tactics</a>
-        </h2>
-		
-		
-        <span class="body">Earlier this year, U.S. Attorney General Eric Holder announced that he had directed federal prosecutors to adjust the ways in which they charged first-time, nonviolent offenders with drug crimes.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 8, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/08/Operation-while-under-the-influence-of-liquor-or-drug-or-while-having-an-elevated-blood-alcohol-content.html">14-227a. Operation while under the influence of liquor or drug or while having an elevated blood alcohol content.</a>
-        </h2>
-		
-		
-        <span class="body">DUI / DWI Law. Statute 14a-227a, Sec. 14-227a. Operation while under the influence of liquor or drug or while having an elevated blood alcohol content.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 7, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/07/FBI-data-shows-more-women-are-being-arrested-for-DUI.html">FBI data shows more women are being arrested for DUI</a>
-        </h2>
-		
-		
-        <span class="body">Drunk driving charges against women have risen sharply in recent decades, FBI data shows, even as the number of male drivers arrested for DUI has been in decline.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 6, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/06/Should-I-hire-an-attorney-for-my-criminal-matter-Yes.html">Should I hire an attorney for my criminal matter? Yes.</a>
-        </h2>
-		
-		
-        <span class="body">If you believe that you are being investigated for a crime, you may want to consider hiring an experienced criminal defense lawyer.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 5, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/05/US-Supreme-Court-says-dog-s-alert-enough-to-search-vehicle.html">US Supreme Court says dog’s alert enough to search vehicle</a>
-        </h2>
-		
-		
-        <span class="body">The U.S. Supreme Court heard oral arguments in two cases involving drug-sniffing dogs this term. Recently, Justice Elena Kagan issued the unanimous decision for the court for one of the cases. The decision for the second case is expected later this year.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 4, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/04/Kids-and-Crime-Connecticut-Passes-Raise-the-Age-Law.html">Kids and Crime: Connecticut Passes ‘Raise the Age’ Law</a>
-        </h2>
-		
-		
-        <span class="body">A separate justice system for juveniles is not some sentimental Victorian notion that has no place in today's tough-minded criminal justice system. Cutting-edge research increasingly shows that the parts of the brain regulating risk taking and rational control are still not fully formed in teenagers.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 3, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/03/Social-Dating-Sites-and-Prohibitions-on-Sex-Offenders.html">Social Dating Sites and Prohibitions on Sex Offenders</a>
-        </h2>
-		
-		
-        <span class="body">Back in the day, couples would meet at family gatherings, parties, bars or church outings. Today, in an age of electronic connectivity, old-fashioned courtship can seem quaint. Like so much else, dating has gone digital, and more and more people are turning to online dating sites to find love - often successfully.  Of course, the Web contains dangers as well as opportunities.  Internet crimes are not an urban myth. But excessive concern about so-called predators should not lead to excessive infringement of the right to free speech and association, either.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 2, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/02/Connecticut-s-Protective-Order-Laws.html">Connecticut’s Protective Order Laws</a>
-        </h2>
-		
-		
-        <span class="body">The problem of domestic violence within families is very real. According to data from the federal Centers for Disease Control, nearly 3 of every 10 women in the US have experienced a form of what the CDC calls &quot;intimate partner violence.&quot; This includes not only rape and physical violence, but also stalking.</span>
-        
-		
-		
-      </li>
-    
-      <li>
-        <span class="post-meta">Jan 1, 2014</span>
-
-        <h2>
-          <a class="post-link" href="/articles/2014/01/01/New-Laws-Significantly-Change-Connecticut-DUI-Consequences.html">New Laws Significantly Change Connecticut DUI Consequences</a>
-        </h2>
-		
-		
-        <span class="body">If you are a motorist charged with drinking and driving for the first time, you might fear the worst. You could be worried about jail time, fines or losing your driver's license. While repeated convictions for driving under the influence usually mean stiff penalties, first-time offenders should not lose hope.</span>
-        
-		
-		
-      </li>
-    
+    {% endfor %}
   </ul>
 </div>
 </div>
@@ -483,224 +210,38 @@ The use of the Internet or this form for communication with the firm or any indi
 
 	<div id="navigationBlog">
 		<ul class="tag-box inline">
-		  
-		  
-			 
-			  <li><a href="#field sobriety test">Field sobriety test</a></li>
-			 
-			  <li><a href="#Drug charges">Drug charges</a></li>
-			 
-			  <li><a href="#arrest">Arrest</a></li>
-			 
-			  <li><a href="#defense">Defense</a></li>
-			 
-			  <li><a href="#drug possession">Drug possession</a></li>
-			 
-			  <li><a href="#search and seizure">Search and seizure</a></li>
-			 
-			  <li><a href="#criminal charge">Criminal charge</a></li>
-			 
-			  <li><a href="#Violent Crimes">Violent crimes</a></li>
-			 
-			  <li><a href="#allegations">Allegations</a></li>
-			 
-			  <li><a href="#criminal charges">Criminal charges</a></li>
-			 
-			  <li><a href="#domestic violence charges">Domestic violence charges</a></li>
-			 
-			  <li><a href="#ignition interlock device">Ignition interlock device</a></li>
-			 
-			  <li><a href="#legal limit">Legal limit</a></li>
-			 
-			  <li><a href="#license suspension">License suspension</a></li>
-			 
-			  <li><a href="#penalties">Penalties</a></li>
-			 
-			  <li><a href="#drug distribution">Drug distribution</a></li>
-			 
-			  <li><a href="#drug offenses">Drug offenses</a></li>
-			 
-			  <li><a href="#drug trafficking">Drug trafficking</a></li>
-			 
-			  <li><a href="#Criminal defense">Criminal defense</a></li>
-			
-		  
-		
+		{% assign tags_list = site.tags %}  
+		  {% if tags_list.first[0] == null %}
+			{% for tag in tags_list %} 
+			  <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+			{% endfor %}
+		  {% else %}
+			{% for tag in tags_list %} 
+			  <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a></li>
+			{% endfor %}
+		  {% endif %}
+		{% assign tags_list = nil %}
 		</ul>
 
-<!--  
-  <h2 id="articles">Articles</h2>
+<!-- {% for cat in site.categories %} 
+  <h2 id="{{ cat[0] }}">{{ cat[0] | capitalize }}</h2>
   <ul class="post-list">
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/12/Signing-of-Connecticut-bill-means-ignition-interlocks-even-for-first-DUI.html">Signing of Connecticut bill means ignition interlocks even for first DUI<span class="entry-date"><time datetime="2014-01-12T00:00:00-05:00" itemprop="datePublished">January 12, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/11/Warrant-required-for-police-cellphone-searches-Court-rules.html">Warrant required for police cellphone searches, Court rules<span class="entry-date"><time datetime="2014-01-11T00:00:00-05:00" itemprop="datePublished">January 11, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/10/Connecticut-bill-seeks-to-eliminate-two-hour-testing-limit-for-DUIs.html">Connecticut bill seeks to eliminate two-hour testing limit for DUIs<span class="entry-date"><time datetime="2014-01-10T00:00:00-05:00" itemprop="datePublished">January 10, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/09/Questions-arise-regarding-feds-confession-tactics.html">Questions arise regarding feds’ confession tactics<span class="entry-date"><time datetime="2014-01-09T00:00:00-05:00" itemprop="datePublished">January 09, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/08/Operation-while-under-the-influence-of-liquor-or-drug-or-while-having-an-elevated-blood-alcohol-content.html">14-227a. Operation while under the influence of liquor or drug or while having an elevated blood alcohol content.<span class="entry-date"><time datetime="2014-01-08T00:00:00-05:00" itemprop="datePublished">January 08, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/07/FBI-data-shows-more-women-are-being-arrested-for-DUI.html">FBI data shows more women are being arrested for DUI<span class="entry-date"><time datetime="2014-01-07T00:00:00-05:00" itemprop="datePublished">January 07, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/06/Should-I-hire-an-attorney-for-my-criminal-matter-Yes.html">Should I hire an attorney for my criminal matter? Yes.<span class="entry-date"><time datetime="2014-01-06T00:00:00-05:00" itemprop="datePublished">January 06, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/05/US-Supreme-Court-says-dog-s-alert-enough-to-search-vehicle.html">US Supreme Court says dog’s alert enough to search vehicle<span class="entry-date"><time datetime="2014-01-05T00:00:00-05:00" itemprop="datePublished">January 05, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/04/Kids-and-Crime-Connecticut-Passes-Raise-the-Age-Law.html">Kids and Crime: Connecticut Passes ‘Raise the Age’ Law<span class="entry-date"><time datetime="2014-01-04T00:00:00-05:00" itemprop="datePublished">January 04, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/03/Social-Dating-Sites-and-Prohibitions-on-Sex-Offenders.html">Social Dating Sites and Prohibitions on Sex Offenders<span class="entry-date"><time datetime="2014-01-03T00:00:00-05:00" itemprop="datePublished">January 03, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/02/Connecticut-s-Protective-Order-Laws.html">Connecticut’s Protective Order Laws<span class="entry-date"><time datetime="2014-01-02T00:00:00-05:00" itemprop="datePublished">January 02, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//articles/2014/01/01/New-Laws-Significantly-Change-Connecticut-DUI-Consequences.html">New Laws Significantly Change Connecticut DUI Consequences<span class="entry-date"><time datetime="2014-01-01T00:00:00-05:00" itemprop="datePublished">January 01, 2014</time></a></li>
-      
-      
-    
-    
-    
+    {% assign pages_list = cat[1] %}  
+    {% for post in pages_list %}
+      {% if post.title != null %}
+      {% if group == null or group == post.group %}
+      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+      {% endif %}
+      {% endif %}
+    {% endfor %}
+    {% assign pages_list = nil %}
+    {% assign group = nil %}
   </ul>
- 
-  <h2 id="drunk-driving">Drunk-driving</h2>
-  <ul class="post-list">
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//drunk-driving/2014/09/03/drunk-driving-possible-penalties.html">Drunk driving: Possible penalties<span class="entry-date"><time datetime="2014-09-03T00:00:00-04:00" itemprop="datePublished">September 03, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//drunk-driving/2014/08/01/man-facing-dui-after-picking-up-son-from-police.html">Man facing DUI after picking up son from police<span class="entry-date"><time datetime="2014-08-01T00:00:00-04:00" itemprop="datePublished">August 01, 2014</time></a></li>
-      
-      
-    
-    
-    
-  </ul>
- 
-  <h2 id="drug-charges">Drug-charges</h2>
-  <ul class="post-list">
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//drug-charges/2014/09/12/drug-charges-what-you-need-to-know.html">Drug charges: What you need to know<span class="entry-date"><time datetime="2014-09-12T00:00:00-04:00" itemprop="datePublished">September 12, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//drug-charges/2014/08/08/two-arrested-on-drug-charges-at-connecticut-motel.html">Two arrested on drug charges at Connecticut motel<span class="entry-date"><time datetime="2014-08-08T00:00:00-04:00" itemprop="datePublished">August 08, 2014</time></a></li>
-      
-      
-    
-    
-    
-  </ul>
- 
-  <h2 id="criminal-defense">Criminal-defense</h2>
-  <ul class="post-list">
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//criminal-defense/2014/09/19/criminal-charges-the-importance-of-the-pretrial-conference.html">Criminal charges: The importance of the pretrial conference<span class="entry-date"><time datetime="2014-09-19T00:00:00-04:00" itemprop="datePublished">September 19, 2014</time></a></li>
-      
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//criminal-defense/2014/08/15/connecticut-police-officer-accused-of-stomping-on-suspect.html">Connecticut police officer accused of stomping on suspect<span class="entry-date"><time datetime="2014-08-15T00:00:00-04:00" itemprop="datePublished">August 15, 2014</time></a></li>
-      
-      
-    
-    
-    
-  </ul>
- 
-  <h2 id="violent-crimes">Violent-crimes</h2>
-  <ul class="post-list">
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//violent-crimes/2014/08/22/murder-conviction-overturned-case-could-be-headed-back-to-trial.html">Murder conviction overturned, case could be headed back to trial<span class="entry-date"><time datetime="2014-08-22T00:00:00-04:00" itemprop="datePublished">August 22, 2014</time></a></li>
-      
-      
-    
-    
-    
-  </ul>
- 
-  <h2 id="domestic-violence">Domestic-violence</h2>
-  <ul class="post-list">
-      
-    
-      
-      
-      <li><a href="http://www.paolettilaw.net//domestic-violence/2014/08/29/domestic-violence-does-there-have-to-be-physical-proof.html">Domestic violence: Does there have to be physical proof?<span class="entry-date"><time datetime="2014-08-29T00:00:00-04:00" itemprop="datePublished">August 29, 2014</time></a></li>
-      
-      
-    
-    
-    
-  </ul>
- -->
+{% endfor %} -->
 		<section id="categories" class="group nav-categories"> 
 			<h4>Categories</h4> 
 				<ul> 
-					<li class="itemFirst item-first"><a href="/blog/criminal-defense/">Criminal Defese </a></li>
+					<li class="itemFirst item-first"><a href="/blog/criminal-defense/">Criminal Defese {{cd}}</a></li>
 					<li><a href="/blog/domestic-violence/">Domestic Violence (19)</a></li> 
 					<li><a href="/blog/drug-charges/">Drug Charges (48)</a></li> 
 					<li><a href="/blog/drunk-driving/">Drunk Driving (32)</a></li> 
@@ -723,21 +264,117 @@ The use of the Internet or this form for communication with the firm or any indi
 					<li><a href="/blog/2013/12/">December 2013 (5)</a></li>
 					<li><a href="/blog/2013/11/">November 2013 (5)</a></li> 
 					<li><a href="/blog/2013/10/">October 2013 (4)</a></li> 
-					<li class="itemLast item-last"><a href="/blog/archives.shtml">Complete Archives</a></li> 
+					<li class="itemLast item-last"><a href="/blog/archives.html">Complete Archives</a></li> 
 				</ul> 
 		</section> 
 				
 		<section id="recentPosts" class="group nav-recent-posts"> 
 			<h4>Recent Posts</h4> 
 				<ul> 
-					<li class="itemFirst item-first"><a href="/blog/2014/09/criminal-charges-the-importance-of-the-pretrial-conference.shtml">Criminal charges: The importance of the pretrial conference</a></li>
-					<li><a href="/blog/2014/09/drug-charges-what-you-need-to-know.shtml">Drug charges: What you need to know</a></li> 
-					<li><a href="/blog/2014/09/drunk-driving-possible-penalties.shtml">Drunk driving: Possible penalties</a></li> 
-					<li class="itemLast item-last"><a href="/blog/2014/08/domestic-violence-does-there-have-to-be-physical-proof.shtml">Domestic violence: Does there have to be physical proof?</a></li> 
+					<li class="itemFirst item-first"><a href="/blog/2014/09/criminal-charges-the-importance-of-the-pretrial-conference.html">Criminal charges: The importance of the pretrial conference</a></li>
+					<li><a href="/blog/2014/09/drug-charges-what-you-need-to-know.html">Drug charges: What you need to know</a></li> 
+					<li><a href="/blog/2014/09/drunk-driving-possible-penalties.html">Drunk driving: Possible penalties</a></li> 
+					<li class="itemLast item-last"><a href="/blog/2014/08/domestic-violence-does-there-have-to-be-physical-proof.html">Domestic violence: Does there have to be physical proof?</a></li> 
 				</ul> 
 		</section>
 	</div>
 
+</div>
+<div id="columnAlternate">
+<div id="containerForm">
+<h4 id="shortFormTitle" class="offscreen">Free Legal Consultation</h4>
+<div id="containerIntakeFormShortAutofill">
+
+<form method="post" name="intakeFormShortAutofill" id="intakeFormShortAutofill" class="formAutoFill">
+<label>
+<strong>Bold</strong> labels are required.
+</label>
+<input type="hidden" name="email_subject" value="Paoletti Law Message From Paolettilaw.net"/>
+<input type="hidden" name="thankyouPage" value="Thank-You"/>
+<fieldset>
+<legend><span>Contact Information</span></legend>
+<label for="intakeFormShortName">Name</label>
+<div class="formHighlight">
+<input type="text" name="email_name" id="intakeFormShortName" title="Name"/>
+</div>
+<label for="intakeFormShortEmail"><strong>E-mail Address</strong><img height="15" width="15" alt="This field is required." src="/design/images/formRequired.gif"/></label>
+<label for="intakeFormShortEmail" class="formHide"><strong>Please enter a valid e-mail address.</strong></label>
+<div class="formHighlight">
+<input type="text" name="email_address" id="intakeFormShortEmail" class="validate email" title="E-mail Address"/>
+</div>
+<label for="intakeFormShortPhone">Phone</label>
+<div class="formHighlight">
+<input type="text" name="phone_number" id="intakeFormShortPhone" title="Phone"/>
+</div>
+<label for="intakeFormShortMessage">Brief description of your legal issue</label>
+<div class="formHighlight">
+<textarea name="email_message" id="intakeFormShortMessage" title="Brief description of your legal issue" rows="4" cols="15"></textarea>
+</div>
+<div class="formCheck">
+<label for="intakeFormShortDisclaimerCheck" class="formHide">
+<strong>Please verify that you have read the disclaimer.</strong>
+</label>
+<label for="intakeFormShortDisclaimerCheck">
+<input type="checkbox" name="Read disclaimer:||r|Please verify that you have read the disclaimer." id="intakeFormShortDisclaimerCheck" class="validate checkbox" value="yes"/>
+<strong>I have read the <span>disclaimer.</span></strong>
+</label>
+<strong>
+<a class="intakeFormShortDisclaimerLink" href="/Paoletti/Disclaimer.html">disclaimer</a>.</strong>
+</div>
+<input class="intakeFormHiddenInput" type="hidden" id="checkboxDisclaimerIntakeFormShort" name="cgi|checkboxDisclaimerIntakeFormShort" value="Read disclaimer:||r|Please verify that you have read the disclaimer."/>
+<div id="intakeFormShortDisclaimer">
+<div>
+<p>
+The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship. Confidential or time-sensitive information should not be sent through this form.
+</p>
+<a href="#intakeFormShortDisclaimerCheck" rel="nofollow">close</a>
+</div>
+</div>
+</fieldset>
+<p class="intakeFormShortPrivacy">
+<a href="/Paoletti/Privacy-Policy.html">Privacy Policy</a>
+</p>
+<input type ="image" src="/design/images/formSubmitShort.gif" value="Submit" name="Submit" class="submit" alt="Submit" id="intakeFormShortAutofillSubmit"/>
+</form>
+</div>
+</div>
+			
+					
+	<div id="containerVideo">
+	  <video id="div_video" class="video-js vjs-default-skin vjs-big-play-centered" controls preload="auto" width="306" height="180" poster="/design/images/video/ui-id-1.jpg" data-setup="{}">  
+		<source src=""  type="video/mp4">
+		<source src=""  type="video/ogg">
+		<source src=""  type="video/webm">
+	  </video>
+	</div>
+
+	<br/>
+
+		
+	  <fieldset id="vid">
+    <label style="font-weight: bold; font-size: 18px;" for="filesB">Select a Video:</label>
+    <select name="filesB" id="filesB">
+      <option rel="01" type="button" value="mypodcast" data-class="video">Overview:  Paoletti & Gusmano, Attorneys at Law handles all aspects of Criminal Defense.</option>
+      <option rel="02" value="myvideo" data-class="video">Drug Charges: In a Drug Charge case we look at all the option, such as the validity of the arrest, the search, and the stop.</option>
+      <option rel="03" type="button" value="myrss" data-class="video">DUI Charges:  The Alcohol Education Program is a diversionary program where a person can avoid being prosecuted.</option>
+      <option rel="04" type="button" value="myrss" data-class="video">Domestic Violence:  There are many consequences that can be associated with the conviction on a domestic violence charge.</option>
+
+	</select>
+  </fieldset>
+
+
+<div id="containerLogos">
+<ul>
+<li><img src="/design/images/logos-mill.png" alt="Million Dollar Advocates Forum" width="101" height="100"/></li>
+<li><img src="/design/images/logos-nacdl.png" alt="National Association of Criminal Defense Lawyers | 50th Anniversary" width="102" height="100"/></li>
+<li><img src="/design/images/logos-atla.png" alt="ATLA | Association of Trial Lawyers of America" width="101" height="100"/></li>
+<li><img src="/design/images/logos-av.png" alt="Distinguished AV | LexisNexis Martindale-Hubbell Peer Review Rated for Ethical Standards and Legal Ability" width="304" height="67"/></li>
+<li><img src="/design/images/super-lawyer.gif" id="superLawyer" alt="Super Lawyers" width="200" height="84"/></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="columnSide">
 <h4 id="practiceTitle" class="offscreen">Practice Areas</h4>
 <div id="navigationPractice" class="cascadingMenu">
 <ul>
@@ -975,8 +612,7 @@ The use of the Internet or this form for communication with the firm or any indi
 </span>
 </p>
 <p>
-<strong>Phone: 203-583-8585
-<br/> Toll Free: 888-854-6907
+<strong>Phone: 203-371-1000
 </strong>
 <br/> Fax: 203-373-9888
 </p>
@@ -1000,7 +636,7 @@ The use of the Internet or this form for communication with the firm or any indi
 <div id="containerFooter">
 <div id="footer">
 <div id="lower">
-<img src="/design/images/cta-lower.png" alt="Phones Answered 24/7 - Free Initial Consultation - 203-583-8585 - 888-854-6907" id="cta-lower" width="642" height="18"/>
+<img src="/design/images/cta-lower.png" alt="Phones Answered 24/7 - Free Initial Consultation - 203-371-1000" id="cta-lower" width="642" height="18"/>
 <img src="/design/images/creditCards.png" alt="VISA | MasterCard | Discover | American Express" id="creditCards" width="216" height="38"/>
 </div>
 <img src="/design/images/logo-lower.png" alt="PG" id="logo-lower" width="121" height="135"/>
@@ -1117,7 +753,6 @@ The use of the Internet or this form for communication with the firm or any indi
               data: $('#intakeFormShortAutofill').serialize(),
 			  dataType: "json",
               success: function(response) {
-					alert('here1');
 				  $('#intakeFormShortAutofill').html("<div id='message'></div>");
 				  if(response.message == "success") {
 					  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
@@ -1126,7 +761,6 @@ The use of the Internet or this form for communication with the firm or any indi
 				  }
               },
               error: function(xhr, ajaxOptions, thrownError){
-			  alert('here2');
 			   $('#intakeFormShortAutofill').html("<div id='message'></div>");
 				  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
               } 
