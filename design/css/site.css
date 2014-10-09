@@ -286,7 +286,7 @@ body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x
 				#containerForm { background: #171717 url(../images/bg-containerForm.png) no-repeat; border: 1px solid #084b76; padding: 35px 40px 27px 54px; width: 210px; margin-bottom: 20px;}
 					#shortFormTitle { width: 222px; height: 20px; background-image: url(../images/shortFormTitle.png); }
 					#containerIntakeFormShort, #containerIntakeFormShortAutofill { padding: 18px 0 0 1px; color: #fff; }
-				#containerVideo { background: #10618e url(../images/bg-containerVideo.png) repeat-x; padding: 8px 0px 10px 0px; width: 306px; overflow: hidden;}
+				#containerVideo { background: #10618e url(../images/bg-containerVideo.png) repeat-x; padding: 0px 0px 0px 0px; width: 306px; overflow: hidden;}
 					div.findlawPlayer.dropDown.tiny { height: auto !important;}
 					div.findlawPlayer.dropDown object.BrightcoveExperience { position: relative !important; }
 				#containerLogos { padding: 41px 0 0 0; width: 304px;}

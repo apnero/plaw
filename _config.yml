@@ -14,4 +14,3 @@ categories: [Articles, Drunk-Driving]
 # Build settings
 markdown: kramdown
 
-exclude: ['vendor']
