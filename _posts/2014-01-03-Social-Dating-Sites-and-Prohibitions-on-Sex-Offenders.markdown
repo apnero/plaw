@@ -1,7 +1,7 @@
 ---
 layout: article
 title:  "Social Dating Sites and Prohibitions on Sex Offenders"
-description: Back in the day, couples would meet at family gatherings, parties, bars or church outings. Today, in an age of electronic connectivity, old-fashioned courtship can seem quaint. Like so much else, dating has gone digital, and more and more people are turning to online dating sites to find love - often successfully.  Of course, the Web contains dangers as well as opportunities.  <a href="/Sexual-Assault-Internet-Crimes.html">Internet crimes</a> are not an urban myth. But excessive concern about so-called predators should not lead to excessive infringement of the right to free speech and association, either.
+description: Back in the day, couples would meet at family gatherings, parties, bars or church outings. Today, in an age of electronic connectivity, old-fashioned courtship can seem quaint. Like so much else, dating has gone digital, and more and more people are turning to online dating sites to find love - often successfully.  Of course, the Web contains dangers as well as opportunities.  <a href="/Sexual-Assault/Sexual-Assault-Internet-Crimes.html">Internet crimes</a> are not an urban myth. But excessive concern about so-called predators should not lead to excessive infringement of the right to free speech and association, either.
 categories: Articles 
 date:   2014-01-03
 ---
