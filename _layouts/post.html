@@ -166,89 +166,68 @@ The use of the Internet or this form for communication with the firm or any indi
 <div id="columnSide">
 
 <div id="navigationBlog">
-		<h4>Categoriesi</h4> 
+		<h4>Categories</h4> 
 		<ul class="tag-box inline">
-		{% assign tags_list = site.categories %}  
-		  {% if tags_list.first[0] == null %}
-			{% for tag in tags_list %} 
-			  <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.categories[tag].size }}</span></a></li>
+		{% assign drunk = '0' %}
+		{% assign drug = '0' %}
+		{% assign crim = '0' %}
+		{% assign vio = '0' %}
+		{% assign dom = '0' %}		
+		
+			{% for post in site.posts %} 
+				{% if post.categories contains "drunk driving" %}
+					{% capture drunk %}{{ drunk | plus: '1' }}{% endcapture %}
+				{% elsif post.categories contains "drug charges" %}
+					{% capture drug %}{{ drug | plus: '1' }}{% endcapture %}
+				{% elsif post.categories contains "criminal defense" %}
+					{% capture crim %}{{ crim | plus: '1' }}{% endcapture %}
+				{% elsif post.categories contains "violent crimes" %}
+					{% capture vio %}{{ vio | plus: '1' }}{% endcapture %}				
+				{% elsif post.categories contains :"domestic violence" %}
+					{% capture dom %}{{ dom | plus: '1' }}{% endcapture %}
+				{% endif %}
 			{% endfor %}
-		  {% else %}
-			{% for tag in tags_list %} 
-			  <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a></li>
-			{% endfor %}
-		  {% endif %}
-		{% assign tags_list = nil %}
+		
+			<li>Drunk Driving ({{ drunk }})</li>
+			<li>Drug charges ({{ drug }})</li>
+			<li>Criminal defense ({{ crim }})</li>
+			<li>Violent crimes ({{ vio }})</li>
+			<li>Domestic violence ({{ dom }})</li>
+			
+			{% assign drunk = nil %}
+			{% assign drug = nil %}
+			{% assign crim = nil %}
+			{% assign vio = nil %}
+			{% assign dom = nil %}	
 		</ul>
 
-		<ul class="tag-box inline">
+	<h4>Recent Posts</h4>
+	<ul class="post-list">
+    {% for post in site.posts limit:5%}
+      <li>
+		<p>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </p>
+	  </li>
+		{% endfor %}
+	 </ul>
+  
+  
+	<h4>Popular Topics</h4> 
+		<p>
 		{% assign tags_list = site.tags %}  
 		  {% if tags_list.first[0] == null %}
 			{% for tag in tags_list %} 
-			  <li><a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a></li>
+			  <a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a>
 			{% endfor %}
 		  {% else %}
 			{% for tag in tags_list %} 
-			  <li><a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a></li>
+			  <a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
 			{% endfor %}
 		  {% endif %}
 		{% assign tags_list = nil %}
-		</ul>
+		</p>
 
-<!-- {% for cat in site.categories %} 
-  <h2 id="{{ cat[0] }}">{{ cat[0] | capitalize }}</h2>
-  <ul class="post-list">
-    {% assign pages_list = cat[1] %}  
-    {% for post in pages_list %}
-      {% if post.title != null %}
-      {% if group == null or group == post.group %}
-      <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}<span class="entry-date"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
-      {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% assign pages_list = nil %}
-    {% assign group = nil %}
-  </ul>
-{% endfor %} -->
-		<section id="categories" class="group nav-categories"> 
-			<h4>Categoriesm</h4> 
-				<ul> 
-					<li class="itemFirst item-first"><a href="/blog/criminal-defense/">Criminal Defese {{cd}}</a></li>
-					<li><a href="/blog/domestic-violence/">Domestic Violence (19)</a></li> 
-					<li><a href="/blog/drug-charges/">Drug Charges (48)</a></li> 
-					<li><a href="/blog/drunk-driving/">Drunk Driving (32)</a></li> 
-					<li class="itemLast item-last"><a href="/blog/violent-crimes/">Violent Crimes (24)</a></li> 	
-				</ul> 
-		</section> 
-		
-		<section id="archives" class="group nav-archives"> 		
-			<h4>Archives</h4> 
-				<ul> 
-					<li class="itemFirst item-first"><a href="/blog/2014/09/">September 2014 (3)</a></li>
-					<li><a href="/blog/2014/08/">August 2014 (5)</a></li>
-					<li><a href="/blog/2014/07/">July 2014 (4)</a></li> 
-					<li><a href="/blog/2014/06/">June 2014 (4)</a></li> 
-					<li><a href="/blog/2014/05/">May 2014 (5)</a></li> 
-					<li><a href="/blog/2014/04/">April 2014 (3)</a></li> 
-					<li><a href="/blog/2014/03/">March 2014 (5)</a></li> 
-					<li><a href="/blog/2014/02/">February 2014 (4)</a></li> 
-					<li><a href="/blog/2014/01/">January 2014 (4)</a></li>
-					<li><a href="/blog/2013/12/">December 2013 (5)</a></li>
-					<li><a href="/blog/2013/11/">November 2013 (5)</a></li> 
-					<li><a href="/blog/2013/10/">October 2013 (4)</a></li> 
-					<li class="itemLast item-last"><a href="/blog/archives.shtml">Complete Archives</a></li> 
-				</ul> 
-		</section> 
-				
-		<section id="recentPosts" class="group nav-recent-posts"> 
-			<h4>Recent Posts</h4> 
-				<ul> 
-					<li class="itemFirst item-first"><a href="/blog/2014/09/criminal-charges-the-importance-of-the-pretrial-conference.shtml">Criminal charges: The importance of the pretrial conference</a></li>
-					<li><a href="/blog/2014/09/drug-charges-what-you-need-to-know.shtml">Drug charges: What you need to know</a></li> 
-					<li><a href="/blog/2014/09/drunk-driving-possible-penalties.shtml">Drunk driving: Possible penalties</a></li> 
-					<li class="itemLast item-last"><a href="/blog/2014/08/domestic-violence-does-there-have-to-be-physical-proof.shtml">Domestic violence: Does there have to be physical proof?</a></li> 
-				</ul> 
-		</section>
 	</div>
 	
 	<h4 id="practiceTitle" class="offscreen">Practice Areas</h4>
