@@ -23,7 +23,7 @@ body { font-size: 1.1em; }
 
 /* DEFINE LINK COLOR */
 a:link { color: #0361c2; }
-a:visited { color: #132b46; }
+a:visited { color: #932b46; }
 a:hover, a:focus { color: #a58103; }
 a:active { color: #a58103; text-decoration: none; }
 

@@ -69,7 +69,12 @@
 <div id="containerColumns">
 <div id="containerMain">
 <div id="columnMain">
+<div id="containerPageTitle">
+<h1 id="pageTitle">{{ page.title }}</h1>
+</div>
+<div id="content">
 {{content}}
+</div>
 </div>
 <div id="columnAlternate">
 <div id="containerForm">
@@ -166,7 +171,8 @@ The use of the Internet or this form for communication with the firm or any indi
 <div id="columnSide">
 
 <div id="navigationBlog">
-		<h4>Categories</h4> 
+	<section id="categories" class="group nav-categories">
+	<h4>Categories</h4> 
 		<ul class="tag-box inline">
 		{% assign drunk = '0' %}
 		{% assign drug = '0' %}
@@ -188,11 +194,11 @@ The use of the Internet or this form for communication with the firm or any indi
 				{% endif %}
 			{% endfor %}
 		
-			<li>Drunk Driving ({{ drunk }})</li>
-			<li>Drug charges ({{ drug }})</li>
-			<li>Criminal defense ({{ crim }})</li>
-			<li>Violent crimes ({{ vio }})</li>
-			<li>Domestic violence ({{ dom }})</li>
+			<li><a href="/DUI-DWI/DUI-DWI.html">Drunk Driving ({{ drunk }})</a></li>
+			<li><a href="/Drug-Charges/Drug-Charges.html">Drug charges ({{ drug }})</a></li>
+			<li><a href="/Criminal-Defense/Criminal-Defense.html">Criminal defense ({{ crim }})</a></li>
+			<li><a href="/Violent-Crimes/Violent-Crimes.html">Violent crimes ({{ vio }})</a></li>
+			<li><a href="/Domestic-Violence/Domestic-Violence.html">Domestic violence ({{ dom }})</a></li>
 			
 			{% assign drunk = nil %}
 			{% assign drug = nil %}
@@ -200,7 +206,8 @@ The use of the Internet or this form for communication with the firm or any indi
 			{% assign vio = nil %}
 			{% assign dom = nil %}	
 		</ul>
-
+</section>
+<section id="recentPosts" class="group nav-recent-posts">
 	<h4>Recent Posts</h4>
 	<ul class="post-list">
     {% for post in site.posts limit:5%}
@@ -211,8 +218,8 @@ The use of the Internet or this form for communication with the firm or any indi
 	  </li>
 		{% endfor %}
 	 </ul>
-  
-  
+  </section>
+  <section id="tagCloud" class="group nav-tag-cloud">
 	<h4>Popular Topics</h4> 
 		<p>
 		{% assign tags_list = site.tags %}  
@@ -227,7 +234,7 @@ The use of the Internet or this form for communication with the firm or any indi
 		  {% endif %}
 		{% assign tags_list = nil %}
 		</p>
-
+</section>
 	</div>
 	
 	<h4 id="practiceTitle" class="offscreen">Practice Areas</h4>

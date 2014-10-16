@@ -18,4 +18,4 @@ date:   2014-01-12
 <p>The new ignition interlock bill was signed into law on August 11 in a ceremony held on the front plaza of the Fairfield Police Department headquarters. The law goes into effect on July 1, 2015.</p>
 <h3>Get help from a DUI defense attorney if you are facing charges</h3>
 <p>If you are being accused of driving under the influence of alcohol in Connecticut, you are facing some harsh consequences, the potential for mandatory installation of an ignition interlock being just one of them. However, you do have legal rights, and by staging a strong legal defense, you may be able to avoid some of the worst consequences of a DUI conviction.</p>
-<p>Protect your future and your freedom. Talk to a Connecticut DUI defense lawyer today if you are being accused of drunk driving.</p>	<p>Keywords: <span itemprop="keywords">ignition interlock, drunk driving, Connecticut</span></p>
+<p>Protect your future and your freedom. Talk to a Connecticut DUI defense lawyer today if you are being accused of drunk driving.</p>	

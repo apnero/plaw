@@ -11,8 +11,9 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
 <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
 
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
-<link href="//vjs.zencdn.net/4.7.3/video-js.css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css"> -->
+<link rel="stylesheet" href="/design/css/jquery-ui.min.css">
+<link href="http://vjs.zencdn.net/4.7.3/video-js.css" rel="stylesheet">
 <link type="text/css" rel="stylesheet" href="/design/css/site.css" media="screen, projection"/>
 
 <link rel="author" href="https://plus.google.com/102436172588466123365/"/>
@@ -124,17 +125,7 @@
 <div class="formHighlight">
 <textarea name="email_message" id="intakeFormShortMessage" title="Brief description of your legal issue" rows="4" cols="15"></textarea>
 </div>
-<div class="formCheck">
-<label for="intakeFormShortDisclaimerCheck" class="formHide">
-<strong>Please verify that you have read the disclaimer.</strong>
-</label>
-<label for="intakeFormShortDisclaimerCheck">
-<input type="checkbox" name="Read disclaimer:||r|Please verify that you have read the disclaimer." id="intakeFormShortDisclaimerCheck" class="validate checkbox" value="yes"/>
-<strong>I have read the <span>disclaimer.</span></strong>
-</label>
-<strong>
-<a class="intakeFormShortDisclaimerLink" href="/Paoletti/Disclaimer.html">disclaimer</a>.</strong>
-</div>
+
 <input class="intakeFormHiddenInput" type="hidden" id="checkboxDisclaimerIntakeFormShort" name="cgi|checkboxDisclaimerIntakeFormShort" value="Read disclaimer:||r|Please verify that you have read the disclaimer."/>
 <div id="intakeFormShortDisclaimer">
 <div>
@@ -145,6 +136,9 @@ The use of the Internet or this form for communication with the firm or any indi
 </div>
 </div>
 </fieldset>
+			<p><img height="50" width="50" alt="" src="/design/images/formDisclaimer.gif" class="formDisclaimer" />The use of the Internet or this form for communication with the firm or any individual member of the firm does not establish a solicitor-client relationship. Confidential or time-sensitive information should not be sent through this form.</p>
+
+			
 <p class="intakeFormShortPrivacy">
 <a href="/Paoletti/Privacy-Policy.html">Privacy Policy</a>
 </p>
@@ -162,7 +156,7 @@ The use of the Internet or this form for communication with the firm or any indi
 	  </video>
 	  
 	  	  <fieldset id="vid">
-    <label style="font-weight: bold; font-size: 18px;" for="filesB">Select a Video:</label>
+    <label style="font-weight: bold; font-size: 17px;" for="filesB">Select a Video:</label>
     <select name="filesB" id="filesB">
       <option rel="01" type="button" value="mypodcast" data-class="video">Overview:  Paoletti & Gusmano, Attorneys at Law handles all aspects of Criminal Defense.</option>
       <option rel="02" type="button" value="myvideo" data-class="video">Drug Charges: In a Drug Charge case we look at all the option, such as the validity of the arrest, the search, and the stop.</option>
@@ -482,11 +476,27 @@ The use of the Internet or this form for communication with the firm or any indi
 <!-- <script type="text/javascript" src="/design/scripts/highlight.js"></script>
 <script type="text/javascript" src="/design/scripts/cascadingMenu.min.js"></script>
 <script type="text/javascript" src="/design/scripts/sifr.js"></script>
-<script type="text/javascript" src="/design/scripts/disclaimerLinkV3.min.js"></script> -->
-<script src="//vjs.zencdn.net/4.8/video.js"></script>
+ 
+<script type="text/javascript" src="/design/scripts/disclaimerLinkV3.min.js"></script>
+ -->
+ 
+
+
+ 
+ <script type="text/javascript" src="http://vjs.zencdn.net/4.8/video.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+ <script type="text/javascript" src="/design/scripts/date.format.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="/design/scripts/URI.js" type="text/javascript" charset="utf-8"></script>
+ <script type="text/javascript" src="/design/scripts/mustache.js" type="text/javascript" charset="utf-8"></script> 
+  <script type="text/javascript" src="/design/scripts/lunr.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" src="/design/scripts/jquery.lunr.search.js" type="text/javascript" charset="utf-8"></script>
+
 <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
-<script src="//code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script type="text/javascript" src="/design/scripts/jquery-ui.min.js"></script>
+
+
+<!-- <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script> -->
 
   <script>
   $(function() {
@@ -579,8 +589,46 @@ The use of the Internet or this form for communication with the firm or any indi
           });
 
         });
+		
+	    $('#intakeFormIV').submit(function(ev){
+		ev.preventDefault();
+          $.ajax({
+              type: "post",
+              url: "/send_email",
+              data: $('#intakeFormIV').serialize(),
+			  dataType: "json",
+              success: function(response) {
+				  $('#intakeFormIV').html("<div id='message'></div>");
+				  if(response.message == "success") {
+					  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
+				  } else {
+					  $('#message').html("<h2>Error sending the message1</h2>").hide().fadeIn(1500);
+				  }
+              },
+              error: function(xhr, ajaxOptions, thrownError){
+			   $('#intakeFormIV').html("<div id='message'></div>");
+				  $('#message').html("<h2>Message successfully sent.</h2>").hide().fadeIn(1500);
+              } 
+          });
+
+        });
+		
+		
     });
 </script>
+
+
+<script type="text/javascript">
+  $(function() {
+    $('#search-query').lunrSearch({
+      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
+      results:  '#search-results',          // jQuery selector for the search results container
+      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+      template: '#search-results-template'  // jQuery selector for the Mustache.js template
+    });
+  });
+</script> 
+
 
   
 <!--[if IE 6]> </div> <![endif]-->

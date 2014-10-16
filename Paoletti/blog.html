@@ -1,31 +1,42 @@
 ---
 layout: post
+title: Bridgeport Criminal Defense Law Blog
+description: This Criminal Defense blog offers news and other information Paoletti &amp; Gusmano, Attorneys at Law hopes Bridgeport, Connecticut residents will find helpful. Please share your comments with us.
 ---
 
 
-<div id="containerPageTitle">
-<h1 id="pageTitle">Violent Crime Defense</h1>
-</div>
-<div id="content">
-  <h1 class="page-heading">Posts</h1>
+
 
   <ul class="post-list">
     {% for post in site.posts limit: 10 %}
       <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+        
 
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
+		<h4 class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</h4>
 		
 		{% if post.description %}
         <span class="body">{{ post.description | strip_html }}</span>
         {% else %}
         <span class="body">{{ post.excerpt | strip_html }}</span>
         {% endif %}
-		
-		
-      </li>
+		<br/>
+		<p>Continue Reading <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+		<p>Tags: 
+			{% assign tags_list = post.tags %}  
+			  {% if tags_list.first[0] == null %}
+				{% for tag in tags_list %} 
+				  <a href="#{{ tag }}">{{ tag | capitalize }}</a>
+				{% endfor %}
+			  {% else %}
+				{% for tag in tags_list %} 
+				  <a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a>
+				{% endfor %}
+			  {% endif %}
+			{% assign tags_list = nil %}
+		</p>	
+	</li>
     {% endfor %}
   </ul>
-</div>

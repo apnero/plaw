@@ -38,7 +38,7 @@ before do
 end
 
 not_found do  
-    File.read('404.html')
+    File.read('_site/404.html')
 end
 
 
