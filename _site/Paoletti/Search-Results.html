@@ -103,7 +103,9 @@
 
 <script type="text/javascript">
 
-	var locate = window.location
+  $(function() {
+  
+  	var locate = window.location
 	document.joe.burns.value = locate
 
 	var text = document.joe.burns.value
@@ -116,9 +118,8 @@
 	}
 	document.write("First Name is " +delineate(text));
 	$('#search-query').value = delineate(text);
-
-
-  $(function() {
+	
+	
     $('#search-query').lunrSearch({
       indexUrl: '/search.json',             // URL of the `search.json` index data for your site
       results:  '#search-results',          // jQuery selector for the search results container
