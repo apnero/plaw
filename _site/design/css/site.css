@@ -272,7 +272,7 @@ body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x
 			#navigationMain ul { list-style: none; padding: 0; margin: 0; }
 			#navigationMain ul li { display: inline; }
 			#navigationMain a { display: block; float: left; }
-		#containerSearchFormDesign { width: 222px; float: right; margin: 0px 0px 0 0; }
+		#containerSearchFormDesign { width: 222px; float: right; margin: 9px 41px 0 0; }
 	#containerColumns { float: left; width: 983px; padding-bottom: 50px; }
 		#containerMain { float: right; width: 727px; }
 			#columnMain { float: left; width: 388px; padding: 26px 0 0 0; }
