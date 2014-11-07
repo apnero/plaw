@@ -80,7 +80,6 @@
 </div>
 
 <section id="search-results">
-  <p>Search results</p>
   <div class="entries">
   </div>
 </section>
@@ -103,6 +102,22 @@
 </script>
 
 <script type="text/javascript">
+
+	var locate = window.location
+	document.joe.burns.value = locate
+
+	var text = document.joe.burns.value
+
+	function delineate(str)
+	{
+	theleft = str.indexOf("=") + 1;
+	theright = str.lastIndexOf("&");
+	return(str.substring(theleft, theright));
+	}
+	document.write("First Name is " +delineate(text));
+	$('#search-query').value = delineate(text);
+
+
   $(function() {
     $('#search-query').lunrSearch({
       indexUrl: '/search.json',             // URL of the `search.json` index data for your site
