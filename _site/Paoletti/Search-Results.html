@@ -73,7 +73,7 @@
 <div id="columnMain">
 <h1 id="pageTitle">Search Results</h1>
 
-<div id="search">
+<div name="try" id="search">
   <form action="/search" method="get">
     <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
   </form>
@@ -105,9 +105,9 @@
 
 	$( document ).ready(function() {
 		var locate = window.location
-		document.search.search-query.value = locate
+		document.try.q.value = locate
 
-		var text = document.search.search-query.value
+		var text = document.try.q.value
 
 		function delineate(str)
 		{
