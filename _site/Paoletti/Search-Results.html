@@ -105,9 +105,9 @@
 
 	$( document ).ready(function() {
 		var locate = window.location
-		document.joe.burns.value = locate
+		document.search.search-query.value = locate
 
-		var text = document.joe.burns.value
+		var text = document.search.search-query.value
 
 		function delineate(str)
 		{
@@ -116,7 +116,7 @@
 		return(str.substring(theleft, theright));
 		}
 		document.write("First Name is " +delineate(text));
-		$('#search-query').value = delineate(text);
+		//$('#search-query').value = delineate(text);
 	});
 
 
