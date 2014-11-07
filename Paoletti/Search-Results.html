@@ -42,7 +42,7 @@ description: Contact our skilled Bridgeport violent crime defense attorneys at 2
 		function delineate(str)
 		{
 		theleft = str.indexOf("=") + 1;
-		theright = str.lastIndexOf("&");
+		theright = str.indexOf("&");
 		return(str.substring(theleft, theright));
 		}
 		document.write("First Name is " +delineate(text));
