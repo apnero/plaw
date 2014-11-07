@@ -45,7 +45,9 @@ description: Contact our skilled Bridgeport violent crime defense attorneys at 2
 		theright = str.indexOf("&");
 		return(str.substring(theleft, theright));
 		}
-		$('#search-query').value = delineate(text);
+		var elem = document.getElementById("search-query");
+		elem.value = delineate(text);
+		//$('#search-query').value = delineate(text);
 	});
 
 

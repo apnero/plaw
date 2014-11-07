@@ -112,7 +112,9 @@
 		theright = str.indexOf("&");
 		return(str.substring(theleft, theright));
 		}
-		$('#search-query').value = delineate(text);
+		var elem = document.getElementById("search-query");
+		elem.value = delineate(text);
+		//$('#search-query').value = delineate(text);
 	});
 
 
