@@ -61,7 +61,7 @@
 <div id="containerSearchFormDesign">
 
 <form action="/Paoletti/Search-Results.html" method="get" class="formAutoFill" name="searchFormDesign" id="searchFormDesign">
-<input name="stext" type="text" id="searchFormDesignSearchTerms" text="Search our site" title="Search our site"/>
+<input name="stext" type="text" id="searchFormDesignSearchTerms" placeholder="Search our site" title="Search our site"/>
 <input type="image" src="/design/images/searchFormDesignSubmit.gif" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" alt="Search"/>
 </form>
 </div>
@@ -69,13 +69,15 @@
 <div id="containerColumns">
 <div id="containerMain">
 <div id="columnMain">
+<h1 id="pageTitle">Search Results</h1>
+
 <div id="search">
   <form action="/search" method="get">
     <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
   </form>
 </div>
 
-<section id="search-results" style="display: none;">
+<section id="search-results">
   <p>Search results</p>
   <div class="entries">
   </div>

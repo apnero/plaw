@@ -4,20 +4,33 @@ title:  "Search Results | Paoletti &amp; Gusmano Attorneys at Law | Bridgeport, 
 description: Contact our skilled Bridgeport violent crime defense attorneys at 203-371-1000 for a free initial consultation today.
 ---
 
+<h1 id="pageTitle">Search Results</h1>
+
 <div id="search">
   <form action="/search" method="get">
     <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
   </form>
 </div>
 
-<section id="search-results" style="display: none;">
+<section id="search-results">
   <p>Search results</p>
   <div class="entries">
   </div>
 </section>
 
 
-
+{% raw %}
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <article>
+      <h3>
+        {{#date}}<small><time datetime="{{pubdate}}" pubdate>{{displaydate}}</time></small>{{/date}}
+        <a href="{{url}}">{{title}}</a>
+      </h3>
+    </article>
+  {{/entries}}
+</script>
+{% endraw %}
 
 
 
