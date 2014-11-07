@@ -104,10 +104,7 @@
 <script type="text/javascript">
 
 	$( document ).ready(function() {
-		var locate = window.location
-		document.try.q.value = locate
-
-		var text = document.try.q.value
+		var text = window.location.search.substring(1);
 
 		function delineate(str)
 		{
@@ -116,7 +113,7 @@
 		return(str.substring(theleft, theright));
 		}
 		document.write("First Name is " +delineate(text));
-		//$('#search-query').value = delineate(text);
+		$('#search-query').value = delineate(text);
 	});
 
 
