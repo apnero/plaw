@@ -106,12 +106,13 @@
       var oldValue = this.$elem.val();
 
       this.$elem.bind('keyup', debounce(function() {
-        var newValue = self.$elem.val();
-        if (newValue !== oldValue) {
+        //andrew changed
+		//var newValue = self.$elem.val();
+        //if (newValue !== oldValue) {
           self.search(newValue);
-        }
+        //}
 
-        oldValue = newValue;
+        //oldValue = newValue;
       }));
     };
     
