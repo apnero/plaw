@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+ruby '2.1.5'
 
 
 gem 'rack'
 gem 'json'
 gem 'sendgrid_ruby'
-
-
-gem 'sendgrid-ruby'
+gem 'bundler'
+gem 'bundle'
+gem 'sinatra'
 gem 'jekyll-lunr-js-search-plusplus', '~> 0.2.7'
