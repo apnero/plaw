@@ -1,13 +1,11 @@
 source 'https://rubygems.org'
 ruby '1.9.3'
 
-gem 'thin'
+
 gem 'rack'
-gem 'sinatra'
-gem 'pony'
 gem 'json'
 gem 'sendgrid_ruby'
-gem 'dotenv'
-gem 'jekyll-lunr-js-search'
-gem 'nokogiri'
+
+
 gem 'sendgrid-ruby'
+gem 'jekyll-lunr-js-search-plusplus', '~> 0.2.7'
