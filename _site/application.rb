@@ -16,7 +16,10 @@ post '/send_email' do
 	sendgrid_password = 'malamute'	#ENV["SENDGRID_PASSWORD"]
 	
 	email = SendgridRuby::Email.new
-	email.add_to('andrew.nero@gmail.com')
+	email.add_to('Fred@Paolettilaw.net')
+	.add_to('Fred@Paolettilaw.net')
+	.add_to('Chris@Paolettilaw.net')
+	.add_to('Paul@paolettilaw.net')
 	.set_from('andrew@plasmascape.com')
 	.set_subject(params[:email_subject])
 	.set_text("<h3>Name: #{params[:email_name]}</h3><h3>Email: #{params[:email_address]}</h3><h3>Phone: #{params[:phone_number]}</h3><p>Message: #{params[:email_message]}</h3>")

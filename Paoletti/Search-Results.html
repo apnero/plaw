@@ -25,31 +25,20 @@ description: Contact our skilled Bridgeport violent crime defense attorneys at 2
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
     <article>
-      <h3>
+      <h2>
         <a href="{{url}}">{{title}}</a>
-      </h3>
-	  <p>{{body}}</p>
+      </h2>
+ <span id="trunk" >{{body}}</span>
 	  <br>
+    <br>
     </article>
   {{/entries}}
 </script>
 
+
+
 <script type="text/javascript">
 
-	$( document ).ready(function() {
-		var text = window.location.search.substring(1);
-
-		function delineate(str)
-		{
-		theleft = str.indexOf("=") + 1;
-		theright = str.indexOf("&");
-		return(str.substring(theleft, theright));
-		}
-		
-		var elem = document.getElementById("search-query");
-		elem.value = delineate(text);
-		$('#search-query').keyup();
-	});
 
 
   $(function() {
@@ -61,7 +50,47 @@ description: Contact our skilled Bridgeport violent crime defense attorneys at 2
     });
   });
   
-  
+  $( document ).ready(function() {
+     $("#search-query").change();
+    $("#search-query").focus();
+    alert("here");
+    var text = window.location.search.substring(1);
+
+    function delineate(str)
+    {
+    theleft = str.indexOf("=") + 1;
+    theright = str.indexOf("&");
+    return(str.substring(theleft, theright));
+    }
+    
+    var elem = document.getElementById("search-query");
+    elem.value = delineate("hello");
+    
+    $("#search-query").change();
+   
+    $('#search-query').keyup();
+    elem.value = delineate(text);
+    var e = $.Event("keyup", { keyCode: 8}); //"keydown" if that's what you're doing
+    $("#search-query").trigger(e);
+    var e = $.Event("keyup", { keyCode: 3}); //"keydown" if that's what you're doing
+    $("search-query").trigger(e);
+    $("#search-query").val("344");
+
+    $('#search-query').lunrSearch({
+      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
+      results:  '#search-results',          // jQuery selector for the search results container
+      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+      template: '#search-results-template'  // jQuery selector for the Mustache.js template
+    });
+     $("#search-query").appendTo("3344");
+    $('#search-query').lunrSearch({
+      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
+      results:  '#search-results',          // jQuery selector for the search results container
+      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
+      template: '#search-results-template'  // jQuery selector for the Mustache.js template
+    });
+  });  
+
 </script> 
 
 
