@@ -332,6 +332,7 @@ body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x
 				#finePrint a:hover, #finePrint a:focus, #finePrint a.current { color: #f4c623; text-decoration: underline; }
 				#copyright { display: inline; padding: 0; margin: 0 10px 0 0; }
 				#branding { display: inline; padding: 0; }
+#awards { clear: both; background: #ffffff url(../images/bg-containerFooter.png) repeat-x; min-width: 1000px;}	
 /* CASCADING MENU - v4.2.5 - 1.3.2012 */
 	/*Horizontal Magic */
 	.cascadingMenu { position: relative; }.cascadingMenu img { display: block; }.cascadingMenu ul { margin: 0; padding: 0; list-style: none; }.cascadingMenu ul li { float: left; position: relative; }.cascadingMenu ul li a { display: block; }.cascadingMenu ul li.megaMenu { position: static; }.cascadingMenu .containerMenu, .cascadingMenu ul ul { display:block; position: absolute; left: -9999em; z-index: 99; }.cascadingMenu .containerMenu ul { position: static; left: 0; z-index: auto; width: auto; }.cascadingMenu ul li li { float: none; }.cascadingMenu li:hover .containerMenu, .cascadingMenu li.menuover .containerMenu, .cascadingMenu li:hover ul, .cascadingMenu li.menuover ul { left: 0; top: auto; background-position: 0 0; }.cascadingMenu ul li.menuover ul ul, .cascadingMenu ul li:hover ul ul, .cascadingMenu ul li.menuover ul ul { left: -9999em; }.cascadingMenu ul li:hover ul ul ul, .cascadingMenu ul li.menuover ul ul ul { position: static; left: 0; top: 0; }

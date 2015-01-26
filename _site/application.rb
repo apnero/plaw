@@ -9,7 +9,7 @@ post '/send_email' do
 	require 'sendgrid_ruby'
 	require 'sendgrid_ruby/version'
 	require 'sendgrid_ruby/email'
-	require 'sendgrid-ruby'
+	#require 'sendgrid-ruby'
 	require 'json'
 
 	sendgrid_username = 'app30181830@heroku.com'	#ENV["SENDGRID_USERNAME"]
