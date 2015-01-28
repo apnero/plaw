@@ -4,7 +4,7 @@ title:  "Connecticut police officer accused of stomping on suspect"
 description: A police officer in Connecticut has been arrested and charged for allegedly stomping on a man's head after the man was already on the ground. The man had been shot with a taser before he was stomped on. The charges say that this alleged attack was a violation of that man's rights, and a video of the incident has now surfaced.
 date:   2014-08-15
 categories: [Criminal Defense] 
-tags: [criminal charge]
+tags: [criminal-charge]
 ---
 
 

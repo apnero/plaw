@@ -4,7 +4,7 @@ title:  "Connecticut woman arrested after alleged drunk driving crash"
 description: A 38-year-old Connecticut woman, who allegedly crashed into several utility poles with her car, has been arrested on drunk driving charges. The incident occurred in West Hartford on a recent Saturday evening, a little before 10 p.m. According to police, after the woman hit the utility poles, she parked her vehicle in the front yard of a neighborhood home.
 date:   2014-07-17
 categories: [Drunk Driving] 
-tags: [Drunk driving charges, accident, conviction, legal limit]
+tags: [Drunk-driving-charges, accident, conviction, legal-limit]
 ---
 
 

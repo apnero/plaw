@@ -4,7 +4,7 @@ title:  "Murder conviction overturned, case could be headed back to trial"
 description: A Connecticut man who had previously sentenced to 60 years in prison after being found guilty of murder has now succeeded in getting the conviction overturned and may be headed for a new trial. According to reports, the man was convicted of murder in 2011 after he was accused of fatally shooting another man outside of the Cardinal's Club on April 27, 2008.
 date:   2014-08-22
 categories: [Violent Crimes] 
-tags: [Violent Crimes]
+tags: [Violent-Crimes]
 ---
 
 

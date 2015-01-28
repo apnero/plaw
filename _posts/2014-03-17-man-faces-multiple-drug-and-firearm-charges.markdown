@@ -4,7 +4,7 @@ title:  "Man faces multiple drug and firearm charges"
 description: A 33-year-old Connecticut man was taken into custody after police officers executed a search warrant on his apartment on Mar. 14. According to the report, the authorities discovered a firearm and evidence of drug distribution within the apartment.
 date:   2014-03-17
 categories: [Drug charges] 
-tags: [Drug charges, drug distribution, drug trafficking, intent to distribute, search and seizure, search warrant]
+tags: [Drug-charges, drug-distribution, drug-trafficking, intent-to-distribute, search-and-seizure, search-warrant]
 ---
 
 

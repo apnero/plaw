@@ -4,7 +4,7 @@ title:  "19-year-old arrested on drug charges in Bridgeport"
 description: A 19-year-old Connecticut man was arrested on drug charges after officers searched his home on June 20. According to reports, a SWAT team went in and raided the house in Bridgeport as part of a gang investigation before it was searched. Officers with the Statewide Urban Violence Cooperative Crime Control Task Force allegedly found two BB guns, six handguns and a total of 77 packets of heroin inside the residence. The investigation into the man had apparently been sparked after a gang was thought to be responsible for several shootings in the local area.
 date:   2014-07-11
 categories: [Drug Charges] 
-tags: [Drug charges, arrest, defense, search warrant]
+tags: [Drug-charges, arrest, defense, search-warrant]
 ---
 
 

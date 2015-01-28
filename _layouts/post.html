@@ -84,6 +84,10 @@
                         </a>
                     </li>
                     <li>
+                        <a href="/Paoletti/awards.html"><img src="/design/images/n-main-awards.png" class="over" alt="Awards" width="70" height="49" />
+                        </a>
+                    </li>
+                    <li>
                         <a href="/Paoletti/Contact.html"><img src="/design/images/n-main-cont.png" class="over" alt="Contact" width="77" height="49" />
                         </a>
                     </li>
@@ -91,10 +95,9 @@
             </div>
             <div id="containerSearchFormDesign">
 
-                <form action="/Paoletti/Search-Results.html" method="get" class="formAutoFill" name="searchFormDesign" id="searchFormDesign">
-                    <label for="searchFormDesignSearchTerms">Search</label>
-                    <input name="stext" type="text" id="searchFormDesignSearchTerms" title="Search our site" />
-                    <input type="image" src="/design/images/searchFormDesignSubmit.gif" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" alt="Search" />
+                <form action="/Paoletti/Search-Results.html" method="get" class="formAutoFill" name="searchFormDesign" id="searchFormDesign"><!-- 
+                    <input name="stext" type="text" id="searchFormDesignSearchTerms" placeholder="Search our site" title="Search our site" /> -->
+                    <input type="image" src="/design/images/searchsite.png" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" value="Search" alt="Search" />
                 </form>
             </div>
         </div>
@@ -214,31 +217,50 @@
                     <section id="categories" class="group nav-categories">
                         <h4>Categories</h4>
                         <ul class="tag-box inline">
-                            {% assign drunk = '0' %} {% assign drug = '0' %} {% assign crim = '0' %} {% assign vio = '0' %} {% assign dom = '0' %} {% for post in site.posts %} {% if post.categories contains "drunk driving" %} {% capture drunk %}{{ drunk | plus: '1' }}{% endcapture %} {% elsif post.categories contains "drug charges" %} {% capture drug %}{{ drug | plus: '1' }}{% endcapture %} {% elsif post.categories contains "criminal defense" %} {% capture crim %}{{ crim | plus: '1' }}{% endcapture %} {% elsif post.categories contains "violent crimes" %} {% capture vio %}{{ vio | plus: '1' }}{% endcapture %} {% elsif post.categories contains :"domestic violence" %} {% capture dom %}{{ dom | plus: '1' }}{% endcapture %} {% endif %} {% endfor %}
+                            {% assign drunk = '0' %} {% assign drug = '0' %} {% assign crim = '0' %} {% assign vio = '0' %} {% assign dom = '0' %} 
+                            {% for post in site.posts %} 
+                                {% if post.categories contains "drunk driving" %} 
+                                    {% capture drunk %}{{ drunk | plus: '1' }}{% endcapture %} 
+                                {% elsif post.categories contains "drug charges" %} 
+                                    {% capture drug %}{{ drug | plus: '1' }}{% endcapture %} 
+                                {% elsif post.categories contains "criminal defense" %} 
+                                    {% capture crim %}{{ crim | plus: '1' }}{% endcapture %} 
+                                {% elsif post.categories contains "violent crimes" %} 
+                                    {% capture vio %}{{ vio | plus: '1' }}{% endcapture %} 
+                                {% elsif post.categories contains "domestic violence" %} 
+                                    {% capture dom %}{{ dom | plus: '1' }}{% endcapture %}
+                                 {% endif %}
+                             {% endfor %}
 
-                            <li><a href="/DUI-DWI/DUI-DWI.html">Drunk Driving ({{ drunk }})</a>
+                            <li><a href="/Paoletti/blog.html?category=drunk&">Drunk Driving ({{ drunk }})</a>
                             </li>
-                            <li><a href="/Drug-Charges/Drug-Charges.html">Drug charges ({{ drug }})</a>
+                            <li><a href="/Paoletti/blog.html?category=drug&">Drug charges ({{ drug }})</a>
                             </li>
-                            <li><a href="/Criminal-Defense/Criminal-Defense.html">Criminal defense ({{ crim }})</a>
+                            <li><a href="/Paoletti/blog.html?category=criminal&">Criminal defense ({{ crim }})</a>
                             </li>
-                            <li><a href="/Violent-Crimes/Violent-Crimes.html">Violent crimes ({{ vio }})</a>
+                            <li><a href="/Paoletti/blog.html?category=violent&">Violent crimes ({{ vio }})</a>
                             </li>
-                            <li><a href="/Domestic-Violence/Domestic-Violence.html">Domestic violence ({{ dom }})</a>
+                            <li><a href="/Paoletti/blog.html?category=domestic&">Domestic violence ({{ dom }})</a>
                             </li>
 
                             {% assign drunk = nil %} {% assign drug = nil %} {% assign crim = nil %} {% assign vio = nil %} {% assign dom = nil %}
                         </ul>
                     </section>
+
+
+        
+
                     <section id="recentPosts" class="group nav-recent-posts">
                         <h4>Recent Posts</h4>
                         <ul class="post-list">
                             {% for post in site.posts limit:5%}
+                            
                             <li>
                                 <p>
                                     <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                                 </p>
                             </li>
+                            
                             {% endfor %}
                         </ul>
                     </section>
@@ -246,8 +268,8 @@
                         <h4>Popular Topics</h4>
                         <p>
                             {% assign tags_list = site.tags %} {% if tags_list.first[0] == null %} {% for tag in tags_list %}
-                            <a href="#{{ tag }}">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a> {% endfor %} {% else %} {% for tag in tags_list %}
-                            <a href="#{{ tag[0] }}">{{ tag[0] | capitalize }}</a> {% endfor %} {% endif %} {% assign tags_list = nil %}
+                            <a href="/Paoletti/blog.html?tag={{ tag }}&">{{ tag | capitalize }} <span>{{ site.tags[tag].size }}</span></a> {% endfor %} {% else %} {% for tag in tags_list %}
+                            <a href="/Paoletti/blog.html?tag={{ tag[0] }}&">{{ tag[0] | capitalize }}</a> {% endfor %} {% endif %} {% assign tags_list = nil %}
                         </p>
                     </section>
                 </div>
@@ -679,6 +701,27 @@
 
     <script type="text/javascript">
         $(document).ready(function() {
+
+            $(".blogentry").hide();
+            var text = window.location.search.substring(1);
+
+            function delineate(str)
+            {
+            theleft = str.indexOf("=") + 1;
+            theright = str.indexOf("&");
+            return(str.substring(theleft, theright));
+            }
+            
+            var selection = delineate(text);
+
+
+            if (selection == "")
+                 $(".blogentry").show();
+            else
+                $("."+ selection).show();
+            
+    
+
 
             $("#intakeFormShortAutofill").submit(function(ev) {
                 ev.preventDefault();

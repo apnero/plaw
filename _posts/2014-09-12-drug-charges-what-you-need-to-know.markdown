@@ -4,7 +4,7 @@ title:  "Drug charges: What you need to know"
 description: Many states are prosecuting drug crimes with increasing aggressiveness, and Connecticut is no different. Depending on the amount of the substance and the substance itself, drug convictions can come with serious penalties, including significant prison time. Understanding what your charges mean and the possible penalties is crucial to understanding your criminal defense options
 date:   2014-09-12
 categories: [Drug Charges] 
-tags: [defense, drug distribution, drug offenses, drug possession, drug trafficking, search and seizure]
+tags: [defense, drug-distribution, drug-offenses, drug-possession, drug-trafficking, search-and-seizure]
 ---
 
 

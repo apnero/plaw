@@ -4,7 +4,7 @@ title:  "Two arrested on drug charges at Connecticut motel"
 description: Two Connecticut residents are facing drug charges after police arrested them at a motel in Manchester. According to reports, police had the Studio 6 Motel under surveillance when they were told that a man and prostitute were reportedly meeting in one of the hotel's rooms. Officers say they watched as the 44-year-old man knocked on the door of the room and threw what they later identified as heroin into a garbage can.
 date: 2014-08-08
 categories: [Drug Charges] 
-tags: [Drug charges, arrest, defense, drug possession, search and seizure]
+tags: [Drug-charges, arrest, defense, drug-possession, search-and-seizure]
 ---
 
 

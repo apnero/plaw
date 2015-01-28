@@ -4,7 +4,7 @@ title:  "2 arrested on drug charges after traffic stop"
 description: Any time someone is charged with a drug crime, the possible penalties are severe, and it is crucial to treat the situation seriously. Defendants may have several different defense options depending on whether the charge was for possession or possession with intent to sell and whether or not it was a first offense. The first step to defending against a drug charge is to be fully informed on how Connecticut law applies to the individual's situation.
 date:  2014-10-03 
 categories: [Drug Charges] 
-tags: [Drug charges, arrest, defense, drug possession, possession of drug paraphernalia, search and seizure, traffic stop]
+tags: [Drug-charges, arrest, defense, drug-possession, possession-of-drug-paraphernalia, search-and-seizure, traffic-stop]
 ---
 
 

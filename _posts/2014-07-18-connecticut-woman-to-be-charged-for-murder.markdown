@@ -4,7 +4,7 @@ title:  "Connecticut woman to be charged for murder"
 description: Connecticut police were thought to be charging a 27-year-old woman with murder after the body of a 41-year-old man from Deep River was found in Branford July 3. According to reports, the Middletown woman was held on bond after being interviewed in the investigation. Authorities report that the charges she was currently being held on were not related to the alleged murder and included a probation violation
 date:   2014-07-18
 categories: [Violent Crimes] 
-tags: [Violent Crimes]
+tags: [Violent-Crimes]
 ---
 
 

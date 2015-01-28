@@ -4,7 +4,7 @@ title:  "Domestic violence: Does there have to be physical proof?"
 description: While physical evidence such as photographs of bruising can certainly result in domestic violence charges, physical proof of an alleged altercation does not have to be present for an individual to be charged with domestic violence in Connecticut. If physical documentation does exist, however, it can have serious implications for the defendants.
 date:   2014-08-29
 categories: [Domestic Violence]
-tags: [allegations, criminal charges, domestic violence charges]
+tags: [allegations, criminal-charges, domestic-violence-charges]
 ---
 
 

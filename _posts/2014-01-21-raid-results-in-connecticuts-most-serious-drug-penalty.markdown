@@ -4,7 +4,7 @@ title:  "Raid results in Connecticut's most serious drug penalty"
 description: A drug raid at a rural Hartford area home on Friday, Jan. 10, has resulted in the seizure of cocaine, marijuana, heroin and cash, as reported by state police. Specifically, police report the seizure of 11 pounds of marijuana, 1 ounce of heroin, more than 1 pound of crack cocaine, some hashish and some hallucinogenic mushrooms. The crack cocaine seizure was believed to be the largest in Washington County history. The cash was reported to have amounted to more than $35,000 in cash. Two illegal guns were also confiscated.
 date:   2014-01-21
 categories: [Drug Charges] 
-tags: [arrest, defense, search warrant]
+tags: [arrest, defense, search-warrant]
 ---
 
 

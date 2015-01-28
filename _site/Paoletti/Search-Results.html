@@ -87,6 +87,10 @@
                         </a>
     	             </li>
                     <li>
+                        <a href="/Paoletti/awards.html"><img src="/design/images/n-main-awards.png" class="over" alt="Awards" width="70" height="49" />
+                        </a>
+                    </li>
+                    <li>
                         <a href="/Paoletti/Contact.html"><img src="/design/images/n-main-cont.png" class="over" alt="Contact" width="77" height="49" />
                         </a>
                     </li>
@@ -94,23 +98,25 @@
             </div>
             <div id="containerSearchFormDesign">
 
-                <form action="/Paoletti/Search-Results.html" method="get" class="formAutoFill" name="searchFormDesign" id="searchFormDesign">
-                    <input name="stext" type="text" id="searchFormDesignSearchTerms" placeholder="Search our site" title="Search our site" />
-                    <input type="image" src="/design/images/searchFormDesignSubmit.gif" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" alt="Search" />
+                <form action="/Paoletti/Search-Results.html" method="get" class="formAutoFill" name="searchFormDesign" id="searchFormDesign"><!-- 
+                    <input name="stext" type="text" id="searchFormDesignSearchTerms" placeholder="Search our site" title="Search our site" /> -->
+                    <input type="image" src="/design/images/searchsite.png" id="searchFormDesignSubmit" class="over" name="searchFormDesignSubmit" alt="Search" />
                 </form>
             </div>
         </div>
         <div id="containerColumns">
             <div id="containerMain">
                 <div id="columnMain">
-                    <h1 id="pageTitle">Search Results</h1>
-
+                    <h1 id="pageTitle">Search Our Site</h1>
+<br>
+<br>
+<h2>Enter Search Term: 
 <div name="try" id="search">
   <form action="act()" method="get">
     <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
   </form>
-</div>
-
+</div></h2>
+<br>
 <section id="search-results">
   <div class="entries">
   </div>
@@ -118,8 +124,8 @@
 
 
 
-
 <script src="/design/scripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+
 
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
@@ -149,46 +155,8 @@
     });
   });
   
-  $( document ).ready(function() {
-     $("#search-query").change();
-    $("#search-query").focus();
-    alert("here");
-    var text = window.location.search.substring(1);
 
-    function delineate(str)
-    {
-    theleft = str.indexOf("=") + 1;
-    theright = str.indexOf("&");
-    return(str.substring(theleft, theright));
-    }
-    
-    var elem = document.getElementById("search-query");
-    elem.value = delineate("hello");
-    
-    $("#search-query").change();
-   
-    $('#search-query').keyup();
-    elem.value = delineate(text);
-    var e = $.Event("keyup", { keyCode: 8}); //"keydown" if that's what you're doing
-    $("#search-query").trigger(e);
-    var e = $.Event("keyup", { keyCode: 3}); //"keydown" if that's what you're doing
-    $("search-query").trigger(e);
-    $("#search-query").val("344");
 
-    $('#search-query').lunrSearch({
-      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
-      results:  '#search-results',          // jQuery selector for the search results container
-      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
-      template: '#search-results-template'  // jQuery selector for the Mustache.js template
-    });
-     $("#search-query").appendTo("3344");
-    $('#search-query').lunrSearch({
-      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
-      results:  '#search-results',          // jQuery selector for the search results container
-      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
-      template: '#search-results-template'  // jQuery selector for the Mustache.js template
-    });
-  });  
 
 </script> 
 

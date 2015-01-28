@@ -4,7 +4,7 @@ title:  "Law enforcement operation charges man for drug trafficking"
 description: Two Connecticut men have been charged with serious drug offenses as a result of a year-long law enforcement operation. Both men have been sentenced to multiple years in prison as a result.
 date:   2014-04-24
 categories: [Drug Charges] 
-tags: [Drug charges, arrest, drug distribution, drug offenses, search warrant]
+tags: [Drug-charges, arrest, drug-distribution, drug-offenses, search-warrant]
 ---
 
 

@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Drunk driving and DUI checkpoints in Connecticut"
+description: With the exception of some states, most states -- including Connecticut -- allow for DUI checkpoints. DUI checkpoints are usually more prevalent around major holidays, when it is more common for motor vehicle operators to drive home drunk from a party. The checkpoints are often set up at intersections, and officers will stop vehicles randomly to check for indications that the drivers are drunk.
+date:  2014-12-04 
+categories: [Drunk Driving] 
+tags: [accident, conviction]
+---
+
+
+<p>With the exception of some states, most states -- including Connecticut -- allow for DUI checkpoints. DUI checkpoints are usually more prevalent around major holidays, when it is more common for motor vehicle operators to drive home drunk from a party. The checkpoints are often set up at intersections, and officers will stop vehicles randomly to check for indications that the drivers are drunk.</p><p>Although some legal theorists and privacy advocates view DUI checkpoints as an invasion of drivers' 4th Amendment privacy rights, federal law and the law in most states support their use. According to a 1990 U.S. Supreme Court ruling, for example, the benefit of keeping drunk drivers off the road outweighs any alleged intrusion of privacy. According to some studies, <a href="/DUI-DWI/DUI-DWI.html" >DUI checkpoints</a> reduce drunk driving accidents by 20 percent when they are appropriately employed.</p> <p>That said, just because you were stopped and accused of drunk driving at a DUI safety check does not mean that you were actually guilty of the crime. Indeed, you will remain innocent of the allegations until -- and only if -- you are found guilty of the crime in a proper court of law.</p><p>Connecticut drivers who are accused of driving while impaired will have various legal defense options available to them. By consulting with an experienced DUI defense attorney, drivers can get a sense for how serious their charges and the likelihood that a conviction will occur. With this knowledge, one can choose between a guilty plea and plea bargaining arrangements, defending against the charges at trial and other legal strategies.</p><p><b>Source:</b> FindLaw, "<a href="http://dui.findlaw.com/dui-arrests/dui-checkpoints.html" target="_blank">DUI Checkpoints</a>" Dec. 02, 2014</p>

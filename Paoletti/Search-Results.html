@@ -4,14 +4,16 @@ title:  "Search Results | Paoletti &amp; Gusmano Attorneys at Law | Bridgeport, 
 description: Contact our skilled Bridgeport violent crime defense attorneys at 203-371-1000 for a free initial consultation today.
 ---
 
-<h1 id="pageTitle">Search Results</h1>
-
+<h1 id="pageTitle">Search Our Site</h1>
+<br>
+<br>
+<h2>Enter Search Term: 
 <div name="try" id="search">
   <form action="act()" method="get">
     <input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">
   </form>
-</div>
-
+</div></h2>
+<br>
 <section id="search-results">
   <div class="entries">
   </div>
@@ -19,8 +21,8 @@ description: Contact our skilled Bridgeport violent crime defense attorneys at 2
 
 
 {% raw %}
-
 <script src="/design/scripts/search.min.js" type="text/javascript" charset="utf-8"></script>
+
 
 <script id="search-results-template" type="text/mustache">
   {{#entries}}
@@ -50,46 +52,8 @@ description: Contact our skilled Bridgeport violent crime defense attorneys at 2
     });
   });
   
-  $( document ).ready(function() {
-     $("#search-query").change();
-    $("#search-query").focus();
-    alert("here");
-    var text = window.location.search.substring(1);
 
-    function delineate(str)
-    {
-    theleft = str.indexOf("=") + 1;
-    theright = str.indexOf("&");
-    return(str.substring(theleft, theright));
-    }
-    
-    var elem = document.getElementById("search-query");
-    elem.value = delineate("hello");
-    
-    $("#search-query").change();
-   
-    $('#search-query').keyup();
-    elem.value = delineate(text);
-    var e = $.Event("keyup", { keyCode: 8}); //"keydown" if that's what you're doing
-    $("#search-query").trigger(e);
-    var e = $.Event("keyup", { keyCode: 3}); //"keydown" if that's what you're doing
-    $("search-query").trigger(e);
-    $("#search-query").val("344");
 
-    $('#search-query').lunrSearch({
-      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
-      results:  '#search-results',          // jQuery selector for the search results container
-      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
-      template: '#search-results-template'  // jQuery selector for the Mustache.js template
-    });
-     $("#search-query").appendTo("3344");
-    $('#search-query').lunrSearch({
-      indexUrl: '/search.json',             // URL of the `search.json` index data for your site
-      results:  '#search-results',          // jQuery selector for the search results container
-      entries:  '.entries',                 // jQuery selector for the element to contain the results list, must be a child of the results element above.
-      template: '#search-results-template'  // jQuery selector for the Mustache.js template
-    });
-  });  
 
 </script> 
 

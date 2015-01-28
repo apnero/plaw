@@ -4,7 +4,7 @@ title:  "Drunk driving: Possible penalties"
 description: Connecticut takes driving under the influence seriously, and that can mean serious penalties for those convicted. In this state, drivers are considered over the legal limit if they are over the age of 21 with a blood alcohol content of .08 or above or under 21 with a blood alcohol content of .02 or above. Knowing the possible consequences can help <a href="/DUI-DWI/DUI-DWI.html" >drunk driving</a> defendants get a better understanding of their cases and their options.
 date:   2014-09-03
 categories: [Drunk Driving] 
-tags: [ignition interlock device, legal limit, license suspension, penalties]
+tags: [ignition-interlock-device, legal-limit, license-suspension, penalties]
 ---
 
 

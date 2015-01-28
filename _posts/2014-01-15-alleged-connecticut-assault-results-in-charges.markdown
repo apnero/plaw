@@ -4,7 +4,7 @@ title:  "Alleged Connecticut assault results in charges"
 description: A man has been charged with first-degree assault and tampering with evidence after allegedly stabbing his roommate at the University of New Haven. The 20-year-old is currently out on bail of $50,000 and is due to appear in court on Feb. 18 at the time of reporting.
 date:   2014-01-15
 categories: [Violent Crimes] 
-tags: [penalties, prison sentence]
+tags: [penalties, prison-sentence]
 ---
 
 

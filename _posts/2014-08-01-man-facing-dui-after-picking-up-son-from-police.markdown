@@ -4,7 +4,7 @@ title:  "Man facing DUI after picking up son from police"
 description: A Connecticut man has been charged with drunk driving after he allegedly exhibited signs of intoxication when he went to pick up his son. According to reports, the Oxford man's 15-year-old son had been detained at the Naugatuck State Forest by officers after he allegedly had been caught riding a motor scooter illegally. The teen's three friends were also detained, according to the Department of Energy and Environmental Protection.
 date:   2014-08-01
 categories: [Drunk Driving] 
-tags: [field sobriety test]
+tags: [field-sobriety-test]
 ---
 
 

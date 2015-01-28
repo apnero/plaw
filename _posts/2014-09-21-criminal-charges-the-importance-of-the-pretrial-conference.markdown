@@ -4,7 +4,7 @@ title:  "Criminal charges: The importance of the pretrial conference"
 description: When you find out you are being charged with a crime, it is normal to immediately begin thinking about what will happen at the trial and what the eventual outcome will be. It is important, however, to take each step in the criminal court process as it comes, and try to stay focused on the task at hand instead of what will happen later on.
 date:   2014-09-19
 categories: [Criminal Defense] 
-tags: [Criminal defense, defense]
+tags: [Criminal-defense, defense]
 ---
 
 
