@@ -244,10 +244,10 @@ body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x
 		#logo { position: absolute; top: 41px; left: 172px; width: 411px; height: 47px; background-image: url(../images/logo.png); }
 		#cta { position: absolute; left: 729px; }
 			#cta a { width: 250px; }		
-       #callnow{  color: #f4c623; font-size: 20px;  font-weight: normal; padding:20px 0px 6px 20px;}
+       #callnow{  color: #f4c623; font-size: 30px;  font-weight: bold; padding:20px 0px 6px 20px;}
        #call-now-phone{ color: #ffffff; font-size: 22px; font-family:  Arial,Helvetica,sans-serif;; font-weight: normal;}
         #call-now-phone ul{ margin:0px; padding-left:20px}
-		 #call-now-phone li{ color: #ffffff; font-size: 22px; font-family:  Arial,Helvetica,sans-serif; font-weight: normal;}
+		 #call-now-phone li{ color: #ffffff; font-size: 30px; font-family:  Arial,Helvetica,sans-serif; font-weight: bold;}
 		  #call-now-phone span{ color: #55d7fd; font-size: 14px; font-family: Arial,Helvetica,sans-serif; font-weight: normal;}
 		#tagline { position: absolute; top: 160px; left: 172px; }
 		#tagline2 { position: absolute; top: 236px; left: 0; }
