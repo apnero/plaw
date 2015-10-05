@@ -290,7 +290,7 @@ body.home { background: #ffffff url(../images/bg-h-body.png) center top repeat-x
 					div.findlawPlayer.dropDown.tiny { height: auto !important;}
 					div.findlawPlayer.dropDown object.BrightcoveExperience { position: relative !important; }
 				#containerLogos { padding: 41px 0 0 0; width: 304px;}
-				.home #containerLogos { position:absolute; top:218px; left:685px; width: 304px; padding: 20px 0 24px 0; background-color: #fff;}
+				.home #containerLogos { position:absolute; top:200px; left:685px; width: 304px; padding: 0px 0 0px 0; background-color: #fff;}
 					#containerLogos ul { list-style: none; padding: 0; margin: 0; }
 					#containerLogos li { display: inline; }
 					#containerLogos img { display: block; float: left; }
